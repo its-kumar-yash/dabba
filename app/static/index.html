@@ -61,6 +61,8 @@
     <div class="row" style="margin:0 0 8px"><span id="prepsum" class="hint">Parse messages to get a plan.</span><button id="replan" class="secondary" style="margin-left:auto">Recompute</button></div>
     <div class="prep"><div><h2>Lunch</h2><div id="lunch"></div></div><div><h2>Dinner</h2><div id="dinner"></div></div></div>
     <h2 style="margin-top:14px">Shopping list for the cook</h2><div class="shop" id="shop"></div>
+    <div class="row" style="margin-top:14px;justify-content:space-between"><h2 style="margin:0">Delivery list</h2><button id="print" class="secondary">Print</button></div>
+    <div id="delivery" class="prep"></div>
     <p class="hint" id="prepnote"></p>
   </section>
 
@@ -96,7 +98,14 @@ async function refresh(){
     const r=await api('/orders/edit',{method:'POST',body:JSON.stringify({id:o.id,items})}); if(r.remembered) toast('Yaad rakh liya: '+r.remembered); await refresh(); await rules();
   });
   document.querySelectorAll('[data-del]').forEach(b=>b.onclick=async()=>{await api('/orders/'+b.dataset.del,{method:'DELETE'});refresh()});
+  delivery(os);
   if(os.length) plan();
+}
+function delivery(os){
+  const live=os.filter(o=>o.action==='order'||o.action==='modify'); const cancelled=new Set(os.filter(o=>o.action==='cancel'||o.action==='pause').map(o=>o.customer+'|'+(o.meal||'')));
+  const html=['lunch','dinner'].map(meal=>{const rows=live.filter(o=>(o.meal||'lunch')===meal&&!cancelled.has(o.customer+'|'+meal)&&!cancelled.has(o.customer+'|'));
+    return `<div><h2>${meal}</h2>${rows.length?`<table><tbody>${rows.map(o=>`<tr><td><b>${esc(o.customer)}</b>${o.time?`<div class="hint">${o.time}</div>`:''}</td><td>${o.items.map(it=>`${it.qty} × ${(MENU.find(d=>d.id===it.dish)||{}).name||it.dish}`).join(', ')}</td><td>${o.prefs.map(p=>`<span class="pill warn">${p.replace('_',' ')}</span>`).join('')}</td></tr>`).join('')}</tbody></table>`:'<p class="hint">none</p>'}</div>`}).join('');
+  $('#delivery').innerHTML=html;
 }
 async function plan(){
   $('#prepsum').textContent='TabPFN soch raha hai…';
@@ -121,6 +130,7 @@ $('#ingest').onclick=async()=>{const text=$('#chat').value.trim();if(!text)retur
 $('#sample').onclick=()=>{$('#chat').value=SAMPLE};
 $('#clear').onclick=async()=>{await api('/orders',{method:'DELETE'});refresh()};
 $('#replan').onclick=plan;
+$('#print').onclick=()=>window.print();
 $('#addrule').onclick=async()=>{const prefs=$('#rp').value.split(',').map(s=>s.trim()).filter(Boolean);try{const r=await api('/rules',{method:'POST',body:JSON.stringify({customer:$('#rc').value.trim(),usual:$('#rd').value,prefs})});toast('Yaad rakh liya: '+r.remembered);$('#rc').value='';$('#rp').value='';rules()}catch(e){toast(e.message)}};
 init();
 </script></body></html>

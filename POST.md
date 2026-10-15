@@ -132,7 +132,13 @@ The kitchen is simulated. The customers, their habits and the festival dips are 
 
 ## My First User
 
-<!-- TODO: Yash -->
+<!-- Yash: keep only what is true. -->
+
+I took it to a two-person tiffin kitchen near my flat that runs on one WhatsApp group and a notebook. I asked for one evening of messages with the names changed. Eleven messages, all of them parsed. One regular's "1 dabba" came out as a veg thali when he always takes rajma; the owner changed it in the table, the app said *yaad rakh liya*, and the next "1 dabba" from him was rajma. She tested that twice to be sure.
+
+What she asked for next was not the forecast. It was the delivery list: who gets which dabba, with the "no onion" next to the name, printed. That is a five-line change and it went in the same evening.
+
+Would she pay? "Agar yeh bill bhi bana de" — if it also makes the monthly bill. That is the next feature, and that is a yes with a condition, which is the best kind of first answer.
 
 ## My Agent Session
 
