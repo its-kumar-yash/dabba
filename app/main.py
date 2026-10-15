@@ -44,9 +44,17 @@ def backend():
     return _backend
 
 
+def _prewarm():
+    try:
+        backend()
+        log.info("prewarm done")
+    except Exception as e:
+        log.warning("prewarm skipped: %s", e)
+
+
 @app.on_event("startup")
 def _startup():
-    threading.Thread(target=lambda: (backend(), log.info("prewarm done")), daemon=True).start()
+    threading.Thread(target=_prewarm, daemon=True).start()
 
 
 class IngestIn(BaseModel):

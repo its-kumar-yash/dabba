@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: dabba
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.6
+      - key: PARSER_BACKEND
+        value: tinker
+      - key: TABPFN_MODE
+        value: client
+      - key: TINKER_API_KEY
+        sync: false
+      - key: DABBA_SAMPLER_PATH
+        sync: false
+      - key: BACKBOARD_API_KEY
+        sync: false
+      - key: TABPFN_TOKEN
+        sync: false
+      - key: DABBA_DB
+        value: /tmp/dabba.db
+      - key: DABBA_STATE
+        value: /tmp/backboard_state.json
+      - key: HF_HOME
+        value: /tmp/hf
