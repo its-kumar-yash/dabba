@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dabba · kal kitna banana hai</title>
+<style>
+  :root { --bg:#fbf8f3; --card:#fff; --ink:#1e1b17; --muted:#7b7368; --accent:#c2410c; --teal:#0f766e; --line:#ebe4d9; }
+  * { box-sizing:border-box } body { margin:0; font-family:-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif; background:var(--bg); color:var(--ink) }
+  header { max-width:900px; margin:0 auto; padding:20px 16px 6px; display:flex; justify-content:space-between; align-items:baseline }
+  h1 { margin:0; font-size:26px } h1 small { font-weight:400; color:var(--muted); font-size:14px; margin-left:8px }
+  .badge { font-size:12px; padding:4px 10px; border-radius:999px; background:#fff3e8; color:#9a3412; border:1px solid #f3d9c4 }
+  main { max-width:900px; margin:0 auto; padding:8px 16px 60px; display:grid; gap:14px }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px }
+  h2 { font-size:15px; margin:0 0 8px; color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:.04em }
+  textarea { width:100%; min-height:140px; font:13px/1.45 ui-monospace,Menlo,monospace; padding:10px 12px; border-radius:10px; border:1px solid var(--line); resize:vertical }
+  button { font:inherit; font-size:14px; padding:9px 14px; border-radius:10px; border:0; background:var(--accent); color:#fff; cursor:pointer }
+  button.secondary { background:#efe8dd; color:var(--ink) } button:disabled { opacity:.5; cursor:wait }
+  .row { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-top:10px } .hint { color:var(--muted); font-size:13px }
+  table { width:100%; border-collapse:collapse; font-size:13.5px } th,td { text-align:left; padding:7px 6px; border-bottom:1px solid var(--line); vertical-align:top }
+  th { color:var(--muted); font-weight:500; font-size:11.5px; text-transform:uppercase; letter-spacing:.04em }
+  select,input[type=number] { font:inherit; font-size:13px; padding:3px 6px; border-radius:8px; border:1px solid var(--line); background:#fff }
+  input[type=number] { width:52px }
+  .raw { color:var(--muted); font-size:12px; max-width:420px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap }
+  .pill { display:inline-block; font-size:11px; padding:2px 7px; border-radius:999px; background:#eef6f5; color:var(--teal); margin-right:3px }
+  .pill.warn { background:#fff3e8; color:#9a3412 } .pill.gray { background:#f1ede6; color:var(--muted) }
+  .prep { display:grid; grid-template-columns:1fr 1fr; gap:14px } @media (max-width:700px){ .prep{grid-template-columns:1fr} }
+  .dish { display:grid; grid-template-columns: 1fr auto; gap:6px; padding:8px 0; border-bottom:1px solid var(--line) }
+  .dish b { font-size:22px } .dish .band { color:var(--muted); font-size:12px }
+  .bar { height:8px; background:#f1ede6; border-radius:5px; position:relative; margin-top:6px }
+  .bar i { position:absolute; height:8px; border-radius:5px; background:#c7e6e2 } .bar b { position:absolute; width:3px; height:8px; background:var(--teal); border-radius:2px }
+  .bar s { position:absolute; width:3px; height:8px; background:var(--accent); border-radius:2px }
+  .shop { display:flex; flex-wrap:wrap; gap:8px } .shop span { background:#f7f2ea; padding:6px 10px; border-radius:8px; font-size:13px }
+  .toast { position:fixed; bottom:18px; left:50%; transform:translateX(-50%); background:#1e1b17; color:#fff; padding:10px 14px; border-radius:10px; font-size:14px; opacity:0; transition:opacity .2s } .toast.show{opacity:1}
+  .del { background:none; color:var(--muted); padding:2px 6px; font-size:16px }
+</style></head>
+<body>
+<header><h1>Dabba <small>kal kitna banana hai</small></h1><span id="badge" class="badge">…</span></header>
+<main>
+  <section class="card">
+    <h2>1 · Tonight's WhatsApp messages</h2>
+    <textarea id="chat" placeholder="Export the group chat (or copy tonight's messages) and paste here. One message per line, like:
+[14/10/26, 9:12 PM] Priya Sharma: kal 2 veg thali lunch, no onion"></textarea>
+    <div class="row">
+      <button id="ingest">Parse messages</button>
+      <button id="sample" class="secondary">Use tonight's sample</button>
+      <label class="hint"><input type="checkbox" id="usemem" checked> use kitchen memory</label>
+      <button id="clear" class="secondary" style="margin-left:auto">Clear orders</button>
+      <span id="status" class="hint"></span>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>2 · Parsed orders for <span id="prepdate"></span></h2>
+    <table><thead><tr><th>Customer</th><th>Meal</th><th>Order</th><th>Prefs</th><th></th></tr></thead><tbody id="rows"></tbody></table>
+    <p class="hint" id="empty">Nothing yet. Paste messages above.</p>
+    <p class="hint">Fix a dish and Dabba remembers that customer's usual. A bare "dabba" from them resolves correctly next time.</p>
+  </section>
+
+  <section class="card">
+    <h2>3 · Kal ka prep (predicted at 9 pm)</h2>
+    <div class="row" style="margin:0 0 8px"><span id="prepsum" class="hint">Parse messages to get a plan.</span><button id="replan" class="secondary" style="margin-left:auto">Recompute</button></div>
+    <div class="prep"><div><h2>Lunch</h2><div id="lunch"></div></div><div><h2>Dinner</h2><div id="dinner"></div></div></div>
+    <h2 style="margin-top:14px">Shopping list for the cook</h2><div class="shop" id="shop"></div>
+    <p class="hint" id="prepnote"></p>
+  </section>
+
+  <section class="card">
+    <h2>Kitchen memory</h2>
+    <div id="rules" class="hint">…</div>
+    <div class="row"><input id="rc" placeholder="Customer name" style="font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:8px"><select id="rd"></select><input id="rp" placeholder="prefs e.g. no_onion, jain" style="font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:8px;width:200px"><button id="addrule" class="secondary">Remember</button></div>
+  </section>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const $=s=>document.querySelector(s); let MENU=[], PREFS=[], SAMPLE="", PREP_DATE="";
+const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2600)}
+async function api(p,o){const r=await fetch(p,{headers:{'Content-Type':'application/json'},...o});if(!r.ok){let d;try{d=(await r.json()).detail}catch(e){d=r.statusText}throw new Error(d)}return r.json()}
+function tomorrow(){const d=new Date();d.setDate(d.getDate()+1);return d.toISOString().slice(0,10)}
+async function init(){
+  const m=await api('/menu'); MENU=m.dishes; PREFS=m.prefs; $('#rd').innerHTML=MENU.map(d=>`<option value="${d.id}">${d.name}</option>`).join('');
+  const h=await api('/health'); SAMPLE=h.sample; $('#badge').textContent=(h.backend==='tinker'?'☁️ LoRA served by Tinker':'🔒 local Ollama')+(h.tabpfn?' · TabPFN':' · TabPFN off');
+  PREP_DATE=tomorrow(); $('#prepdate').textContent=PREP_DATE; await refresh(); await rules();
+}
+function pills(o){return o.prefs.map(p=>`<span class="pill">${p}</span>`).join('')+(o.hints.length?`<span class="pill gray" title="${esc(o.hints.join('\n'))}">memory</span>`:'')+(o.repeat?`<span class="pill warn">${o.repeat}</span>`:'')}
+function orderCell(o){
+  if(o.action!=='order'&&o.action!=='modify') return `<span class="pill warn">${o.action}</span>`;
+  return o.items.map((it,i)=>`<span><input type="number" min="1" value="${it.qty}" data-id="${o.id}" data-i="${i}" class="qty"> <select data-id="${o.id}" data-i="${i}" class="dish">${MENU.map(d=>`<option value="${d.id}" ${d.id===it.dish?'selected':''}>${d.name}</option>`).join('')}</select></span>`).join(' + ')
+}
+async function refresh(){
+  const os=await api('/orders?date='+PREP_DATE);
+  $('#empty').style.display=os.length?'none':'block';
+  $('#rows').innerHTML=os.map(o=>`<tr><td>${esc(o.customer)}<div class="raw" title="${esc(o.raw_text)}">${esc(o.raw_text.replace(/^\[[^\]]+\]\s*/,''))}</div></td><td>${o.meal||'—'}${o.time?`<div class="hint">${o.time}</div>`:''}</td><td>${orderCell(o)}</td><td>${pills(o)}</td><td><button class="del" data-del="${o.id}">×</button></td></tr>`).join('');
+  document.querySelectorAll('.dish,.qty').forEach(el=>el.onchange=async()=>{
+    const o=os.find(x=>x.id==el.dataset.id); const items=o.items.map((it,i)=>({dish:document.querySelector(`.dish[data-id="${o.id}"][data-i="${i}"]`).value, qty:+document.querySelector(`.qty[data-id="${o.id}"][data-i="${i}"]`).value}));
+    const r=await api('/orders/edit',{method:'POST',body:JSON.stringify({id:o.id,items})}); if(r.remembered) toast('Yaad rakh liya: '+r.remembered); await refresh(); await rules();
+  });
+  document.querySelectorAll('[data-del]').forEach(b=>b.onclick=async()=>{await api('/orders/'+b.dataset.del,{method:'DELETE'});refresh()});
+  if(os.length) plan();
+}
+async function plan(){
+  $('#prepsum').textContent='TabPFN soch raha hai…';
+  try{ const p=await api('/prep?date_='+PREP_DATE);
+    for(const meal of ['lunch','dinner']){ const el=$('#'+meal); const rows=p.meals[meal]; if(!rows.length){el.innerHTML='<p class="hint">nothing expected</p>';continue}
+      const mx=Math.max(...rows.map(r=>r.hi),1);
+      el.innerHTML=rows.map(r=>`<div class="dish"><div><div>${r.name} <span class="hint">· ${r.advance} booked · usual ${r.usual}</span></div>
+        <div class="bar"><i style="left:${r.lo/mx*100}%;width:${(r.hi-r.lo)/mx*100}%"></i><s style="left:${r.advance/mx*100}%"></s><b style="left:${r.forecast/mx*100}%"></b></div>
+        <div class="band">forecast ${r.forecast} · 80% band ${r.lo}–${r.hi}</div></div><div style="text-align:right"><b>${r.cook}</b><div class="hint">cook</div></div></div>`).join('');
+    }
+    $('#shop').innerHTML=Object.entries(p.shopping).map(([k,v])=>`<span>${k.replace('_g','')}: <b>${k.endsWith('_g')?(v/1000).toFixed(1)+' kg':v}</b></span>`).join('');
+    $('#prepsum').textContent=`${p.total_advance} dabbas booked so far → cook ${p.total_cook} (${p.forecast_ok?'TabPFN':'rule of thumb, TabPFN off'})`;
+    $('#prepnote').textContent=p.forecast_ok?'Teal bar = TabPFN 10–90% band, orange tick = already booked, teal tick = median. "Cook" leans to the top of the band when the extra is cheap.':'Set TABPFN_TOKEN to get the forecast band; showing booked ÷ usual advance share.';
+  }catch(e){$('#prepsum').textContent='plan failed: '+e.message}
+}
+async function rules(){ const rs=await api('/rules'); $('#rules').innerHTML=rs.length?rs.map(r=>`<span class="pill gray">${esc(r.content)} <a href="#" data-rid="${r.id}" title="forget">×</a></span>`).join(' '):'No rules yet. Correct an order or add one below.';
+  document.querySelectorAll('[data-rid]').forEach(a=>a.onclick=async e=>{e.preventDefault();await api('/rules/'+a.dataset.rid,{method:'DELETE'});rules()}) }
+$('#ingest').onclick=async()=>{const text=$('#chat').value.trim();if(!text)return;$('#ingest').disabled=true;$('#status').textContent='parsing…';
+  try{const r=await api('/ingest',{method:'POST',body:JSON.stringify({text,use_memory:$('#usemem').checked})});const ok=r.orders.filter(o=>!o.error);const ms=ok.length?Math.round(ok.reduce((a,o)=>a+o.latency_ms,0)/ok.length):0;
+    $('#status').textContent=`${ok.length}/${r.n} parsed · ${ms} ms avg${ok.some(o=>o.hints.length)?' · memory used':''}`; if(ok.length&&ok[0].date) {PREP_DATE=ok.find(o=>o.date)?.date||PREP_DATE;$('#prepdate').textContent=PREP_DATE}; $('#chat').value='';await refresh()}
+  catch(e){$('#status').textContent='';toast(e.message)} $('#ingest').disabled=false};
+$('#sample').onclick=()=>{$('#chat').value=SAMPLE};
+$('#clear').onclick=async()=>{await api('/orders',{method:'DELETE'});refresh()};
+$('#replan').onclick=plan;
+$('#addrule').onclick=async()=>{const prefs=$('#rp').value.split(',').map(s=>s.trim()).filter(Boolean);try{const r=await api('/rules',{method:'POST',body:JSON.stringify({customer:$('#rc').value.trim(),usual:$('#rd').value,prefs})});toast('Yaad rakh liya: '+r.remembered);$('#rc').value='';$('#rp').value='';rules()}catch(e){toast(e.message)}};
+init();
+</script></body></html>

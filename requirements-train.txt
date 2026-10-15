@@ -1,0 +1,7 @@
+-r requirements.txt
+tinker-cookbook
+torch
+transformers>=4.45
+matplotlib
+scikit-learn
+tabpfn

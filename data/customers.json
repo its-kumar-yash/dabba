@@ -1,0 +1,916 @@
+[
+ {
+  "name": "Swati Reddy",
+  "usual": "dal_chawal",
+  "prefs": [],
+  "meals": [
+   "lunch",
+   "dinner"
+  ],
+  "subscribed": true,
+  "weekday_only": true
+ },
+ {
+  "name": "Meera Nair",
+  "usual": "veg_thali",
+  "prefs": [
+   "no_onion",
+   "less_spicy"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": true,
+  "weekday_only": false
+ },
+ {
+  "name": "Priya Agarwal",
+  "usual": "rajma_chawal",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": true,
+  "weekday_only": false
+ },
+ {
+  "name": "Meera Mishra",
+  "usual": "chole_chawal",
+  "prefs": [
+   "no_rice"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Sahil Mishra",
+  "usual": "dal_chawal",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Kunal Agarwal",
+  "usual": "veg_thali",
+  "prefs": [
+   "less_spicy",
+   "extra_spicy"
+  ],
+  "meals": [
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Sahil Arora",
+  "usual": "veg_thali",
+  "prefs": [
+   "less_spicy"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": false
+ },
+ {
+  "name": "Deepak Malhotra",
+  "usual": "veg_thali",
+  "prefs": [
+   "extra_spicy"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Tanvi Bansal",
+  "usual": "chicken_thali",
+  "prefs": [
+   "no_onion"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Ritu Sharma",
+  "usual": "veg_thali",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": true,
+  "weekday_only": false
+ },
+ {
+  "name": "Anjali Sethi",
+  "usual": "chole_chawal",
+  "prefs": [
+   "less_spicy"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": false
+ },
+ {
+  "name": "Jyoti Sharma",
+  "usual": "veg_thali",
+  "prefs": [],
+  "meals": [
+   "dinner"
+  ],
+  "subscribed": true,
+  "weekday_only": true
+ },
+ {
+  "name": "Arjun Jain",
+  "usual": "veg_thali",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": true,
+  "weekday_only": false
+ },
+ {
+  "name": "Varun Mishra",
+  "usual": "chole_chawal",
+  "prefs": [
+   "no_onion"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": true,
+  "weekday_only": true
+ },
+ {
+  "name": "Rahul Agarwal",
+  "usual": "veg_thali",
+  "prefs": [
+   "less_spicy"
+  ],
+  "meals": [
+   "lunch",
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Kunal Yadav",
+  "usual": "veg_thali",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Neha Reddy",
+  "usual": "rajma_chawal",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": false
+ },
+ {
+  "name": "Meera Mehra",
+  "usual": "chicken_thali",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": false
+ },
+ {
+  "name": "Abhishek Mehra",
+  "usual": "chicken_thali",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Rahul Singh",
+  "usual": "chicken_thali",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Vikas Mehra",
+  "usual": "paneer_thali",
+  "prefs": [
+   "less_oil"
+  ],
+  "meals": [
+   "lunch",
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Isha Gupta",
+  "usual": "chicken_thali",
+  "prefs": [],
+  "meals": [
+   "lunch",
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": false
+ },
+ {
+  "name": "Arjun Gupta",
+  "usual": "veg_thali",
+  "prefs": [
+   "no_onion",
+   "extra_roti"
+  ],
+  "meals": [
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": false
+ },
+ {
+  "name": "Tarun Singh",
+  "usual": "veg_thali",
+  "prefs": [
+   "less_spicy",
+   "extra_roti"
+  ],
+  "meals": [
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": false
+ },
+ {
+  "name": "Divya Tiwari",
+  "usual": "paneer_thali",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Abhishek Arora",
+  "usual": "veg_thali",
+  "prefs": [],
+  "meals": [
+   "lunch",
+   "dinner"
+  ],
+  "subscribed": true,
+  "weekday_only": true
+ },
+ {
+  "name": "Harsh Mishra",
+  "usual": "veg_thali",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": false
+ },
+ {
+  "name": "Nikhil Nair",
+  "usual": "rajma_chawal",
+  "prefs": [
+   "less_spicy"
+  ],
+  "meals": [
+   "lunch",
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Swati Das",
+  "usual": "dal_chawal",
+  "prefs": [],
+  "meals": [
+   "lunch",
+   "dinner"
+  ],
+  "subscribed": true,
+  "weekday_only": true
+ },
+ {
+  "name": "Aakash Kapoor",
+  "usual": "veg_thali",
+  "prefs": [],
+  "meals": [
+   "lunch",
+   "dinner"
+  ],
+  "subscribed": true,
+  "weekday_only": false
+ },
+ {
+  "name": "Siddharth Jain",
+  "usual": "dal_chawal",
+  "prefs": [
+   "no_onion"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": false
+ },
+ {
+  "name": "Bhavna Kapoor",
+  "usual": "veg_thali",
+  "prefs": [
+   "no_onion"
+  ],
+  "meals": [
+   "dinner"
+  ],
+  "subscribed": true,
+  "weekday_only": false
+ },
+ {
+  "name": "Neha Sethi",
+  "usual": "veg_thali",
+  "prefs": [
+   "jain"
+  ],
+  "meals": [
+   "dinner"
+  ],
+  "subscribed": true,
+  "weekday_only": false
+ },
+ {
+  "name": "Shreya Yadav",
+  "usual": "veg_thali",
+  "prefs": [
+   "less_spicy"
+  ],
+  "meals": [
+   "lunch",
+   "dinner"
+  ],
+  "subscribed": true,
+  "weekday_only": true
+ },
+ {
+  "name": "Payal Jain",
+  "usual": "rajma_chawal",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Vikas Khan",
+  "usual": "rajma_chawal",
+  "prefs": [],
+  "meals": [
+   "lunch",
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Karan Mehra",
+  "usual": "veg_thali",
+  "prefs": [
+   "less_spicy"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Deepak Mishra",
+  "usual": "veg_thali",
+  "prefs": [
+   "no_onion",
+   "less_spicy"
+  ],
+  "meals": [
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Shreya Bose",
+  "usual": "paneer_thali",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Aakash Iyer",
+  "usual": "veg_thali",
+  "prefs": [
+   "no_onion"
+  ],
+  "meals": [
+   "dinner"
+  ],
+  "subscribed": true,
+  "weekday_only": false
+ },
+ {
+  "name": "Siddharth Sharma",
+  "usual": "veg_thali",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": true,
+  "weekday_only": true
+ },
+ {
+  "name": "Meera Iyer",
+  "usual": "chicken_thali",
+  "prefs": [
+   "less_spicy"
+  ],
+  "meals": [
+   "lunch",
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Rohit Sharma",
+  "usual": "rajma_chawal",
+  "prefs": [
+   "less_oil"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": true,
+  "weekday_only": true
+ },
+ {
+  "name": "Varun Nair",
+  "usual": "veg_thali",
+  "prefs": [
+   "less_spicy"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Rahul Malhotra",
+  "usual": "veg_thali",
+  "prefs": [],
+  "meals": [
+   "lunch",
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Neha Arora",
+  "usual": "chicken_thali",
+  "prefs": [],
+  "meals": [
+   "lunch",
+   "dinner"
+  ],
+  "subscribed": true,
+  "weekday_only": true
+ },
+ {
+  "name": "Karan Saini",
+  "usual": "veg_thali",
+  "prefs": [],
+  "meals": [
+   "dinner"
+  ],
+  "subscribed": true,
+  "weekday_only": false
+ },
+ {
+  "name": "Bhavna Bose",
+  "usual": "chole_chawal",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Harsh Khan",
+  "usual": "veg_thali",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Amit Kumar",
+  "usual": "chicken_thali",
+  "prefs": [
+   "less_oil"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": true,
+  "weekday_only": true
+ },
+ {
+  "name": "Siddharth Arora",
+  "usual": "veg_thali",
+  "prefs": [
+   "less_spicy"
+  ],
+  "meals": [
+   "lunch",
+   "dinner"
+  ],
+  "subscribed": true,
+  "weekday_only": false
+ },
+ {
+  "name": "Megha Sharma",
+  "usual": "dal_chawal",
+  "prefs": [
+   "jain"
+  ],
+  "meals": [
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Amit Bose",
+  "usual": "veg_thali",
+  "prefs": [
+   "less_spicy"
+  ],
+  "meals": [
+   "lunch",
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": false
+ },
+ {
+  "name": "Anjali Sharma",
+  "usual": "rajma_chawal",
+  "prefs": [
+   "no_onion",
+   "extra_roti",
+   "no_rice"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": true,
+  "weekday_only": false
+ },
+ {
+  "name": "Tarun Agarwal",
+  "usual": "veg_thali",
+  "prefs": [
+   "less_spicy"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Nidhi Mishra",
+  "usual": "chicken_thali",
+  "prefs": [
+   "extra_roti"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Isha Bansal",
+  "usual": "dal_chawal",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": false
+ },
+ {
+  "name": "Tanvi Mehra",
+  "usual": "dal_chawal",
+  "prefs": [],
+  "meals": [
+   "lunch",
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Nikhil Bose",
+  "usual": "dal_chawal",
+  "prefs": [
+   "no_onion"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": false
+ },
+ {
+  "name": "Kunal Kapoor",
+  "usual": "veg_thali",
+  "prefs": [
+   "extra_roti"
+  ],
+  "meals": [
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": false
+ },
+ {
+  "name": "Nidhi Bansal",
+  "usual": "chole_chawal",
+  "prefs": [],
+  "meals": [
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Manish Jain",
+  "usual": "veg_thali",
+  "prefs": [
+   "jain"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": true,
+  "weekday_only": true
+ },
+ {
+  "name": "Varun Das",
+  "usual": "dal_chawal",
+  "prefs": [],
+  "meals": [
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Nidhi Verma",
+  "usual": "veg_thali",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Tarun Khan",
+  "usual": "chicken_thali",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": false
+ },
+ {
+  "name": "Bhavna Tiwari",
+  "usual": "veg_thali",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": true,
+  "weekday_only": true
+ },
+ {
+  "name": "Yash Chauhan",
+  "usual": "veg_thali",
+  "prefs": [
+   "no_onion"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": true,
+  "weekday_only": true
+ },
+ {
+  "name": "Meera Chauhan",
+  "usual": "veg_thali",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Neha Nair",
+  "usual": "rajma_chawal",
+  "prefs": [
+   "no_onion"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Priya Iyer",
+  "usual": "veg_thali",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Pooja Mehra",
+  "usual": "veg_thali",
+  "prefs": [
+   "less_spicy"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": true,
+  "weekday_only": true
+ },
+ {
+  "name": "Tanvi Malhotra",
+  "usual": "dal_chawal",
+  "prefs": [
+   "less_spicy"
+  ],
+  "meals": [
+   "lunch",
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Anjali Nair",
+  "usual": "paneer_thali",
+  "prefs": [
+   "extra_spicy"
+  ],
+  "meals": [
+   "lunch",
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Pooja Nair",
+  "usual": "veg_thali",
+  "prefs": [
+   "less_spicy",
+   "less_oil"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": false
+ },
+ {
+  "name": "Kunal Gupta",
+  "usual": "veg_thali",
+  "prefs": [
+   "less_spicy",
+   "extra_spicy"
+  ],
+  "meals": [
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Mohit Bansal",
+  "usual": "veg_thali",
+  "prefs": [],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Harsh Kapoor",
+  "usual": "veg_thali",
+  "prefs": [
+   "no_onion"
+  ],
+  "meals": [
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": true
+ },
+ {
+  "name": "Tanvi Agarwal",
+  "usual": "chicken_thali",
+  "prefs": [
+   "less_spicy"
+  ],
+  "meals": [
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": false
+ },
+ {
+  "name": "Abhishek Singh",
+  "usual": "veg_thali",
+  "prefs": [
+   "less_spicy"
+  ],
+  "meals": [
+   "lunch"
+  ],
+  "subscribed": true,
+  "weekday_only": true
+ },
+ {
+  "name": "Megha Verma",
+  "usual": "chole_chawal",
+  "prefs": [],
+  "meals": [
+   "lunch",
+   "dinner"
+  ],
+  "subscribed": false,
+  "weekday_only": false
+ }
+]
