@@ -6,6 +6,7 @@ import os
 import re
 import sys
 import threading
+from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
@@ -116,18 +117,25 @@ def ingest(inp: IngestIn):
     msgs = split_chat(inp.text)
     if not msgs:
         raise HTTPException(400, "no messages found")
-    results = []
-    for m in msgs[:60]:
+    be = backend()
+
+    def one(m: str):
         hints = memory.hints_for(m) if inp.use_memory else []
         try:
-            label, ms = backend().parse(m, hints)
+            label, ms = be.parse(m, hints)
         except ParseError as e:
-            results.append({"raw_text": m, "error": str(e)[:160]})
-            continue
+            return {"raw_text": m, "error": str(e)[:160]}
         except Exception as e:
             log.exception("parse failed")
-            raise HTTPException(502, f"parser backend error: {e}")
-        results.append(db.insert(m, label, hints, ms, backend().name))
+            return {"raw_text": m, "error": f"parser backend error: {e}"[:160]}
+        return (m, label, hints, ms)
+
+    # Tinker sampling is network-bound; a few in flight at once turns 12 x 4 s into ~15 s
+    with ThreadPoolExecutor(max_workers=4) as ex:
+        outs = list(ex.map(one, msgs[:60]))
+    results = []
+    for o in outs:  # insert in message order so ids follow the chat
+        results.append(o if isinstance(o, dict) else db.insert(*o, be.name))
     return {"orders": results, "n": len(msgs)}
 
 
