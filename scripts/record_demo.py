@@ -48,19 +48,25 @@ def main():
         shot(page, "parsed2", 1800, "Harsh Khan said '1 dabba'. No rule yet, so it defaulted to veg thali")
         # wait for the plan
         t0 = time.time()
-        while time.time() - t0 < 120 and "TabPFN" not in (page.locator("#prepsum").inner_text() or ""):
+        while time.time() - t0 < 180 and "cook" not in (page.locator("#prepsum").inner_text() or ""):
             page.wait_for_timeout(1500)
         page.locator("#prepsum").scroll_into_view_if_needed(); page.wait_for_timeout(500)
         shot(page, "plan", 3200, "TabPFN: tomorrow's count per dish with an 80% band, and what to cook")
         page.mouse.wheel(0, 320); page.wait_for_timeout(500)
         shot(page, "shopping", 2400, "...and a shopping list in rotis and kilos")
+        page.locator("#delivery").scroll_into_view_if_needed(); page.wait_for_timeout(500)
+        shot(page, "delivery", 2400, "Delivery list per meal, with 'no onion' next to the name")
         # correct Harsh Khan's dish -> memory
         page.locator("#rows").scroll_into_view_if_needed(); page.wait_for_timeout(400)
         row = page.locator("#rows tr", has_text="Harsh Khan").first
         sel = row.locator("select.dish").first
         sel.select_option("paneer_thali")
-        page.wait_for_timeout(900)
-        shot(page, "corrected", 2600, "Change it once: 'Yaad rakh liya', Dabba remembers Harsh takes paneer")
+        try:
+            page.wait_for_selector(".toast.show", timeout=15000)
+        except Exception:
+            page.wait_for_timeout(1500)
+        page.wait_for_timeout(300)
+        shot(page, "corrected", 2800, "Change it once: 'Yaad rakh liya', Dabba remembers Harsh takes paneer")
         page.wait_for_timeout(2500)
         page.locator("#rules").scroll_into_view_if_needed(); page.wait_for_timeout(500)
         shot(page, "memory", 3000, "The rule lives in Backboard memory, readable and deletable")
@@ -74,6 +80,16 @@ def main():
         except Exception:
             pass
     imgs, durs = [], []
+    last = None
+    deduped = []
+    for p, d, cap in frames:  # collapse identical consecutive frames (the 'parsing…' wait)
+        sig = p.stat().st_size
+        if last and sig == last[0] and cap == last[1]:
+            deduped[-1] = (deduped[-1][0], deduped[-1][1] + d, cap)
+            continue
+        last = (sig, cap)
+        deduped.append((p, d, cap))
+    frames[:] = deduped
     for p, d, cap in frames:
         im = Image.open(p).convert("RGB")
         dr = ImageDraw.Draw(im, "RGBA")

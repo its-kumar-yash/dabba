@@ -27,7 +27,7 @@ Who pays: the owner. One over-cooked tray of chicken is more than a month of thi
 
 ## Demo
 
-<!-- TODO: GIF -->
+![Dabba demo: paste the group chat, parse, get tomorrow's prep list, fix one dish and the kitchen remembers](https://raw.githubusercontent.com/its-kumar-yash/dabba/main/results/demo.gif)
 
 Hosted demo: **https://dabba-jgho.onrender.com** (free tier, about a minute to wake). Press *Use tonight's sample* to load twelve messages from the simulated kitchen's last evening, parse them (about 12 seconds for all twelve), and get the prep list (about 30 seconds, one TabPFN call per plan). Then change Harsh Khan's "1 dabba" to a paneer thali and watch the kitchen memory learn it.
 
