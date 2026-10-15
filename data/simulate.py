@@ -242,13 +242,14 @@ def render(intent: dict, rng: random.Random):
             minute = rng.choice([0, 0, 30])
             tval = f"{hour:02d}:{minute:02d}"
             h12 = hour - 12 if hour > 12 else hour
-            ttxt = rng.choice([f"{h12} bje", f"{h12}{':30' if minute else ''} baje", f"{h12}:{minute:02d} pm", f"by {h12}{':30' if minute else ''}", f"{h12} baje tak"])
+            hm = f"{h12}:30" if minute else f"{h12}"
+            ttxt = rng.choice([f"{hm} bje", f"{hm} baje", f"{h12}:{minute:02d} pm", f"by {hm}", f"{hm} baje tak", f"{hm} pm"])
         if kind == "modify":
-            templates = [f"{when} {mtxt} me {q} {dtxt} kar dena instead", f"change {when} {mtxt} to {q} {dtxt}", f"{when} ka {mtxt} {q} {dtxt} kar do"]
+            templates = [f"{when} {mplain} me {q} {dtxt} kar dena instead {ttxt}", f"change {when} {mtxt} to {q} {dtxt} {ttxt}", f"{when} ka {mtxt} {q} {dtxt} kar do {ttxt}"]
         elif style == "english":
             templates = [f"Please send {q} {dtxt} {when} {mtxt} {ttxt}", f"{q} {dtxt} for {mtxt} {when} {ttxt}", f"{when} {mtxt}: {q} {dtxt} {ttxt}", f"Can I get {q} {dtxt} {when} for {mtxt}?"]
         elif style == "hindi":
-            templates = [f"{when} {mtxt} {q} {dtxt} chahiye {ttxt}", f"{when} {q} {dtxt} bhej dena {mtxt} {ttxt}", f"{q} {dtxt} {when} {mtxt} ko"]
+            templates = [f"{when} {mtxt} {q} {dtxt} chahiye {ttxt}", f"{when} {q} {dtxt} bhej dena {mtxt} {ttxt}", f"{q} {dtxt} {when} {mplain} ko"]
         else:
             templates = [f"{when} {q} {dtxt} {mtxt} {ttxt}", f"{when} {mtxt} {q} {dtxt} bhej dena {ttxt}", f"{q} {dtxt} {when} {mtxt} {ttxt}", f"{when} {mplain} ke liye {q} {dtxt} {ttxt}", f"bhaiya {when} {q} {dtxt} {mtxt} {ttxt} 🙏"]
         text = rng.choice(templates)
