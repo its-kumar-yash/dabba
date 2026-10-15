@@ -1,0 +1,137 @@
+train=1400 val=150 base=Qwen/Qwen3.5-4B rank=16
+console: https://tinker.thinkingmachines.ai/training_runs/73f6a449-6442-580c-b656-26f876a3cf00:train:0
+tokens/example: mean=491 max=550
+steps/epoch=43 total_steps=129
+step    0/129 lr=4.00e-05 train_nll=0.1711 val_nll=0.1285
+step    1/129 lr=7.94e-05 train_nll=0.1324
+step    2/129 lr=1.18e-04 train_nll=0.0300
+step    3/129 lr=1.57e-04 train_nll=0.0519
+step    4/129 lr=1.94e-04 train_nll=0.0375
+step    5/129 lr=1.93e-04 train_nll=0.0689
+step    6/129 lr=1.92e-04 train_nll=0.0271
+step    7/129 lr=1.90e-04 train_nll=0.0148
+step    8/129 lr=1.89e-04 train_nll=0.0187
+step    9/129 lr=1.87e-04 train_nll=0.0225
+step   10/129 lr=1.86e-04 train_nll=0.0187 val_nll=0.0165
+step   11/129 lr=1.85e-04 train_nll=0.0136
+step   12/129 lr=1.83e-04 train_nll=0.0152
+step   13/129 lr=1.82e-04 train_nll=0.0031
+step   14/129 lr=1.80e-04 train_nll=0.0079
+step   15/129 lr=1.79e-04 train_nll=0.0136
+step   16/129 lr=1.78e-04 train_nll=0.0035
+step   17/129 lr=1.76e-04 train_nll=0.0038
+step   18/129 lr=1.75e-04 train_nll=0.0011
+step   19/129 lr=1.73e-04 train_nll=0.0149
+step   20/129 lr=1.72e-04 train_nll=0.0155 val_nll=0.0061
+step   21/129 lr=1.70e-04 train_nll=0.0224
+step   22/129 lr=1.69e-04 train_nll=0.0188
+step   23/129 lr=1.68e-04 train_nll=0.0022
+step   24/129 lr=1.66e-04 train_nll=0.0033
+step   25/129 lr=1.65e-04 train_nll=0.0065
+step   26/129 lr=1.63e-04 train_nll=0.0083
+step   27/129 lr=1.62e-04 train_nll=0.0092
+step   28/129 lr=1.61e-04 train_nll=0.0062
+step   29/129 lr=1.59e-04 train_nll=0.0018
+step   30/129 lr=1.58e-04 train_nll=0.0132 val_nll=0.0026
+step   31/129 lr=1.56e-04 train_nll=0.0008
+step   32/129 lr=1.55e-04 train_nll=0.0019
+step   33/129 lr=1.54e-04 train_nll=0.0017
+step   34/129 lr=1.52e-04 train_nll=0.0063
+step   35/129 lr=1.51e-04 train_nll=0.0004
+step   36/129 lr=1.49e-04 train_nll=0.0032
+step   37/129 lr=1.48e-04 train_nll=0.0020
+step   38/129 lr=1.47e-04 train_nll=0.0004
+step   39/129 lr=1.45e-04 train_nll=0.0032
+step   40/129 lr=1.44e-04 train_nll=0.0108 val_nll=0.0018
+step   41/129 lr=1.42e-04 train_nll=0.0005
+step   42/129 lr=1.41e-04 train_nll=0.0040
+step   43/129 lr=1.40e-04 train_nll=0.0003
+step   44/129 lr=1.38e-04 train_nll=0.0034
+step   45/129 lr=1.37e-04 train_nll=0.0005
+step   46/129 lr=1.35e-04 train_nll=0.0010
+step   47/129 lr=1.34e-04 train_nll=0.0032
+step   48/129 lr=1.32e-04 train_nll=0.0046
+step   49/129 lr=1.31e-04 train_nll=0.0013
+step   50/129 lr=1.30e-04 train_nll=0.0008 val_nll=0.0013
+step   51/129 lr=1.28e-04 train_nll=0.0004
+step   52/129 lr=1.27e-04 train_nll=0.0038
+step   53/129 lr=1.25e-04 train_nll=0.0040
+step   54/129 lr=1.24e-04 train_nll=0.0010
+step   55/129 lr=1.23e-04 train_nll=0.0007
+step   56/129 lr=1.21e-04 train_nll=0.0005
+step   57/129 lr=1.20e-04 train_nll=0.0007
+step   58/129 lr=1.18e-04 train_nll=0.0029
+step   59/129 lr=1.17e-04 train_nll=0.0029
+step   60/129 lr=1.16e-04 train_nll=0.0005 val_nll=0.0009
+step   61/129 lr=1.14e-04 train_nll=0.0002
+step   62/129 lr=1.13e-04 train_nll=0.0003
+step   63/129 lr=1.11e-04 train_nll=0.0029
+step   64/129 lr=1.10e-04 train_nll=0.0002
+step   65/129 lr=1.09e-04 train_nll=0.0008
+step   66/129 lr=1.07e-04 train_nll=0.0018
+step   67/129 lr=1.06e-04 train_nll=0.0008
+step   68/129 lr=1.04e-04 train_nll=0.0025
+step   69/129 lr=1.03e-04 train_nll=0.0061
+step   70/129 lr=1.02e-04 train_nll=0.0004 val_nll=0.0007
+step   71/129 lr=1.00e-04 train_nll=0.0004
+step   72/129 lr=9.88e-05 train_nll=0.0056
+step   73/129 lr=9.73e-05 train_nll=0.0034
+step   74/129 lr=9.59e-05 train_nll=0.0013
+step   75/129 lr=9.45e-05 train_nll=0.0148
+step   76/129 lr=9.31e-05 train_nll=0.0006
+step   77/129 lr=9.17e-05 train_nll=0.0030
+step   78/129 lr=9.03e-05 train_nll=0.0031
+step   79/129 lr=8.89e-05 train_nll=0.0004
+step   80/129 lr=8.75e-05 train_nll=0.0001 val_nll=0.0023
+step   81/129 lr=8.61e-05 train_nll=0.0014
+step   82/129 lr=8.47e-05 train_nll=0.0048
+step   83/129 lr=8.33e-05 train_nll=0.0006
+step   84/129 lr=8.19e-05 train_nll=0.0030
+step   85/129 lr=8.05e-05 train_nll=0.0004
+step   86/129 lr=7.91e-05 train_nll=0.0064
+step   87/129 lr=7.77e-05 train_nll=0.0033
+step   88/129 lr=7.62e-05 train_nll=0.0003
+step   89/129 lr=7.48e-05 train_nll=0.0009
+step   90/129 lr=7.34e-05 train_nll=0.0010 val_nll=0.0012
+step   91/129 lr=7.20e-05 train_nll=0.0012
+step   92/129 lr=7.06e-05 train_nll=0.0007
+step   93/129 lr=6.92e-05 train_nll=0.0004
+step   94/129 lr=6.78e-05 train_nll=0.0002
+step   95/129 lr=6.64e-05 train_nll=0.0027
+step   96/129 lr=6.50e-05 train_nll=0.0001
+step   97/129 lr=6.36e-05 train_nll=0.0051
+step   98/129 lr=6.22e-05 train_nll=0.0002
+step   99/129 lr=6.08e-05 train_nll=0.0008
+step  100/129 lr=5.94e-05 train_nll=0.0040 val_nll=0.0014
+step  101/129 lr=5.80e-05 train_nll=0.0001
+step  102/129 lr=5.66e-05 train_nll=0.0001
+step  103/129 lr=5.52e-05 train_nll=0.0002
+step  104/129 lr=5.38e-05 train_nll=0.0001
+step  105/129 lr=5.23e-05 train_nll=0.0003
+step  106/129 lr=5.09e-05 train_nll=0.0001
+step  107/129 lr=4.95e-05 train_nll=0.0042
+step  108/129 lr=4.81e-05 train_nll=0.0026
+step  109/129 lr=4.67e-05 train_nll=0.0002
+step  110/129 lr=4.53e-05 train_nll=0.0001 val_nll=0.0004
+step  111/129 lr=4.39e-05 train_nll=0.0001
+step  112/129 lr=4.25e-05 train_nll=0.0029
+step  113/129 lr=4.11e-05 train_nll=0.0001
+step  114/129 lr=3.97e-05 train_nll=0.0002
+step  115/129 lr=3.83e-05 train_nll=0.0002
+step  116/129 lr=3.69e-05 train_nll=0.0003
+step  117/129 lr=3.55e-05 train_nll=0.0002
+step  118/129 lr=3.41e-05 train_nll=0.0016
+step  119/129 lr=3.27e-05 train_nll=0.0047
+step  120/129 lr=3.13e-05 train_nll=0.0002 val_nll=0.0005
+step  121/129 lr=2.98e-05 train_nll=0.0043
+step  122/129 lr=2.84e-05 train_nll=0.0048
+step  123/129 lr=2.70e-05 train_nll=0.0002
+step  124/129 lr=2.56e-05 train_nll=0.0014
+step  125/129 lr=2.42e-05 train_nll=0.0016
+step  126/129 lr=2.28e-05 train_nll=0.0057
+step  127/129 lr=2.14e-05 train_nll=0.0002
+step  128/129 lr=2.00e-05 train_nll=0.0004 val_nll=0.0011
+
+SAMPLER_PATH = tinker://73f6a449-6442-580c-b656-26f876a3cf00:train:0/sampler_weights/dabba-v2
+STATE_PATH   = tinker://73f6a449-6442-580c-b656-26f876a3cf00:train:0/weights/dabba-v2-state
+Add to .env:  DABBA_SAMPLER_PATH=tinker://73f6a449-6442-580c-b656-26f876a3cf00:train:0/sampler_weights/dabba-v2

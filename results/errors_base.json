@@ -1,0 +1,4322 @@
+[
+  {
+    "text": "[16/07/26, 6:15 PM] Megha Verma: kl do chole chawal lunch 2 pm",
+    "gold": {
+      "action": "order",
+      "customer": "Megha Verma",
+      "date": "2026-07-17",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "14:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Megha Verma",
+        "date": "2026-07-16",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": "14:00",
+        "repeat": null
+      },
+      "ms": 2544.8587920000136,
+      "p": 434,
+      "c": 106
+    }
+  },
+  {
+    "text": "[04/06/26, 1:34 PM] Vikas Khan: tiffin kab tak aayega?",
+    "gold": {
+      "action": "query",
+      "customer": "Vikas Khan",
+      "date": "2026-06-04",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Vikas Khan",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2544.399124999927,
+      "p": 431,
+      "c": 43
+    }
+  },
+  {
+    "text": "[30/04/26, 8:22 PM] Abhishek Arora: kl ek chicken raat",
+    "gold": {
+      "action": "order",
+      "customer": "Abhishek Arora",
+      "date": "2026-05-01",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Abhishek Arora",
+        "date": "2026-04-30",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2543.732541999816,
+      "p": 430,
+      "c": 102
+    }
+  },
+  {
+    "text": "[07/07/26, 1:38 PM] Divya Tiwari: abhi tak nahi aaya",
+    "gold": {
+      "action": "query",
+      "customer": "Divya Tiwari",
+      "date": "2026-07-07",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: query, customer: \"Divya Tiwari\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null",
+      "ms": 2544.438999999784,
+      "pred": null,
+      "p": 432,
+      "c": 37,
+      "raw": "{action: query, customer: \"Divya Tiwari\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[08/05/26, 8:36 PM] Meera Iyer: tiffin kab tak aayega?",
+    "gold": {
+      "action": "query",
+      "customer": "Meera Iyer",
+      "date": "2026-05-08",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Meera Iyer",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2545.1654170001348,
+      "p": 432,
+      "c": 44
+    }
+  },
+  {
+    "text": "[27/08/26, 8:55 AM] Amit Bose: aaj do chole rice dopahar ko . kam mirch please",
+    "gold": {
+      "action": "order",
+      "customer": "Amit Bose",
+      "date": "2026-08-27",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Amit Bose",
+        "date": "2026-08-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2911.038415999883,
+      "p": 437,
+      "c": 110
+    }
+  },
+  {
+    "text": "[22/06/26, 8:31 PM] Varun Mishra: tomorrow lunch me do chole rice bhej dena by 1",
+    "gold": {
+      "action": "order",
+      "customer": "Varun Mishra",
+      "date": "2026-06-23",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "13:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Varun Mishra",
+        "date": "2026-06-23",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2883.6523340000895,
+      "p": 439,
+      "c": 101
+    }
+  },
+  {
+    "text": "[24/07/26, 7:31 AM] Amit Bose: bhaiya aaj two veg thali night 🙏, kam teekha",
+    "gold": {
+      "action": "order",
+      "customer": "Amit Bose",
+      "date": "2026-07-24",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: order, customer: \"Amit Bose\", date: \"2026-07-24\", meal: \"dinner\", items: [{\"dish\": \"veg_thali\", \"qty\": ",
+      "ms": 2079.016541999863,
+      "pred": null,
+      "p": 440,
+      "c": 64,
+      "raw": "{action: order, customer: \"Amit Bose\", date: \"2026-07-24\", meal: \"dinner\", items: [{\"dish\": \"veg_thali\", \"qty\": 2}], prefs: [\"less_spicy\"], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[19/05/26, 9:16 AM] Bhavna Bose: today dopahar ko: 2 chole 12:00 pm",
+    "gold": {
+      "action": "order",
+      "customer": "Bhavna Bose",
+      "date": "2026-05-19",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "12:00",
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: order, customer: \"Bhavna Bose\", date: \"2026-05-19\", meal: \"lunch\", items: [{\"dish\": \"chole_chawal\", \"qt",
+      "ms": 2078.130708000117,
+      "pred": null,
+      "p": 441,
+      "c": 68,
+      "raw": "{action: order, customer: \"Bhavna Bose\", date: \"2026-05-19\", meal: \"lunch\", items: [{\"dish\": \"chole_chawal\", \"qty\": 2}], prefs: null, time: \"12:00\", repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[21/09/26, 7:12 AM] Tanvi Agarwal: bhaiya today ek non veg raat 🙏. kam mirch please",
+    "gold": {
+      "action": "order",
+      "customer": "Tanvi Agarwal",
+      "date": "2026-09-21",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Tanvi Agarwal",
+        "date": "2026-09-21",
+        "meal": "dinner",
+        "items": [],
+        "prefs": [
+          "extra_spicy"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2077.110457999879,
+      "p": 441,
+      "c": 84
+    }
+  },
+  {
+    "text": "[16/07/26, 10:15 PM] Tarun Agarwal: kal se phir se start kar do",
+    "gold": {
+      "action": "resume",
+      "customer": "Tarun Agarwal",
+      "date": "2026-07-17",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: resume, customer: \"Tarun Agarwal\", date: null, meal: null, items: [], prefs: [], time: null, repeat: nu",
+      "ms": 2076.2329999997746,
+      "pred": null,
+      "p": 433,
+      "c": 36,
+      "raw": "{action: resume, customer: \"Tarun Agarwal\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[24/07/26, 9:50 AM] Bhavna Bose: ek tiffin for lunch me today",
+    "gold": {
+      "action": "order",
+      "customer": "Bhavna Bose",
+      "date": "2026-07-24",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: order, customer: \"Bhavna Bose\", date: \"2026-07-24\", meal: \"lunch\", items: [{\"dish\": \"chole_chawal\", \"qt",
+      "ms": 2062.969791999876,
+      "pred": null,
+      "p": 452,
+      "c": 63,
+      "raw": "{action: order, customer: \"Bhavna Bose\", date: \"2026-07-24\", meal: \"lunch\", items: [{\"dish\": \"chole_chawal\", \"qty\": 1}], prefs: null, time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[24/09/26, 10:22 PM] Tanvi Malhotra: kl lunch ke liye ek tiffin",
+    "gold": {
+      "action": "order",
+      "customer": "Tanvi Malhotra",
+      "date": "2026-09-25",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Tanvi Malhotra",
+        "date": "2026-09-25",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2033.245167000132,
+      "p": 460,
+      "c": 111
+    }
+  },
+  {
+    "text": "[22/08/26, 9:43 PM] Megha Verma: resume from tomorrow please",
+    "gold": {
+      "action": "resume",
+      "customer": "Megha Verma",
+      "date": "2026-08-23",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "resume",
+        "customer": "Megha Verma",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2249.7260000000097,
+      "p": 449,
+      "c": 62
+    }
+  },
+  {
+    "text": "[02/08/26, 10:19 PM] Varun Das: Can I get do dal rice tomorrow for dinner?",
+    "gold": {
+      "action": "order",
+      "customer": "Varun Das",
+      "date": "2026-08-03",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Varun Das",
+        "date": "2026-08-03",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2300.2688750002562,
+      "p": 434,
+      "c": 99
+    }
+  },
+  {
+    "text": "[22/05/26, 10:36 AM] Neha Reddy: aj 2 rajma chawal lunch me 1 bje",
+    "gold": {
+      "action": "order",
+      "customer": "Neha Reddy",
+      "date": "2026-05-22",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "rajma_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "13:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Neha Reddy",
+        "date": "2026-05-22",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "rajma_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2312.0479170002,
+      "p": 438,
+      "c": 102
+    }
+  },
+  {
+    "text": "[27/08/26, 1:37 PM] Varun Nair: kitna hua is mahine ka?",
+    "gold": {
+      "action": "query",
+      "customer": "Varun Nair",
+      "date": null,
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: query, customer: \"Varun Nair\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}'",
+      "ms": 2329.300874999717,
+      "pred": null,
+      "p": 433,
+      "c": 36,
+      "raw": "{action: query, customer: \"Varun Nair\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[27/09/26, 7:25 PM] Rahul Agarwal: kal 2 tiffin raat ko 8:30 baje",
+    "gold": {
+      "action": "order",
+      "customer": "Rahul Agarwal",
+      "date": "2026-09-28",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "20:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Rahul Agarwal",
+        "date": "2026-09-27",
+        "meal": "dinner",
+        "items": [],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": "20:30",
+        "repeat": null
+      },
+      "ms": 2307.9424170000493,
+      "p": 462,
+      "c": 89
+    }
+  },
+  {
+    "text": "[30/05/26, 9:52 PM] Karan Saini: kal ka raat ko cancel kar do",
+    "gold": {
+      "action": "cancel",
+      "customer": "Karan Saini",
+      "date": "2026-05-31",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: cancel, customer: \"Karan Saini\", date: \"2026-05-30\", meal: \"dinner\", items: [], prefs: [], time: null, ",
+      "ms": 2035.6093329996838,
+      "pred": null,
+      "p": 433,
+      "c": 49,
+      "raw": "{action: cancel, customer: \"Karan Saini\", date: \"2026-05-30\", meal: \"dinner\", items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[16/07/26, 9:51 PM] Vikas Khan: kl dinner me 1 rajma bhej dena",
+    "gold": {
+      "action": "order",
+      "customer": "Vikas Khan",
+      "date": "2026-07-17",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "rajma_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Vikas Khan",
+        "date": "2026-07-16",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "rajma_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2046.0688749999463,
+      "p": 435,
+      "c": 100
+    }
+  },
+  {
+    "text": "[26/08/26, 8:58 AM] Neha Arora: Can I get ek non veg today for dopahar?",
+    "gold": {
+      "action": "order",
+      "customer": "Neha Arora",
+      "date": "2026-08-26",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": "14:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Neha Arora",
+        "date": "2026-08-26",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2012.3619579999286,
+      "p": 436,
+      "c": 102
+    }
+  },
+  {
+    "text": "[31/08/26, 7:50 PM] Shreya Yadav: one veg thali kal afternoon",
+    "gold": {
+      "action": "order",
+      "customer": "Shreya Yadav",
+      "date": "2026-09-01",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Shreya Yadav",
+        "date": "2026-08-31",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": "12:00",
+        "repeat": null
+      },
+      "ms": 2401.389542000288,
+      "p": 431,
+      "c": 106
+    }
+  },
+  {
+    "text": "[13/08/26, 8:21 PM] Megha Sharma: bhaiya tomorrow 1 dabba dinner me 8 pm 🙏. no onion garlic please",
+    "gold": {
+      "action": "order",
+      "customer": "Megha Sharma",
+      "date": "2026-08-14",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "jain"
+      ],
+      "time": "20:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Megha Sharma",
+        "date": "2026-08-14",
+        "meal": "dinner",
+        "items": [],
+        "prefs": [
+          "no_onion"
+        ],
+        "time": "20:00",
+        "repeat": null
+      },
+      "ms": 2077.6615409999977,
+      "p": 467,
+      "c": 88
+    }
+  },
+  {
+    "text": "[30/06/26, 9:54 PM] Pooja Nair: kal se 4 tak mat bhejna",
+    "gold": {
+      "action": "pause",
+      "customer": "Pooja Nair",
+      "date": "2026-07-01",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: pause, customer: \"Pooja Nair\", date: null, meal: null, items: [], prefs: [], time: \"16:00\", repeat: nul",
+      "ms": 2064.805708000222,
+      "pred": null,
+      "p": 434,
+      "c": 42,
+      "raw": "{action: pause, customer: \"Pooja Nair\", date: null, meal: null, items: [], prefs: [], time: \"16:00\", repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[05/05/26, 1:40 PM] Priya Agarwal: tiffin kab tak aayega?",
+    "gold": {
+      "action": "query",
+      "customer": "Priya Agarwal",
+      "date": "2026-05-05",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Priya Agarwal",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2125.0729160001356,
+      "p": 432,
+      "c": 44
+    }
+  },
+  {
+    "text": "[09/08/26, 9:08 PM] Megha Verma: bhaiya kl do chole dinner me 🙏",
+    "gold": {
+      "action": "order",
+      "customer": "Megha Verma",
+      "date": "2026-08-10",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: modify, customer: \"Megha Verma\", date: \"2026-08-10\", meal: \"dinner\", items: [{\"dish\": \"chole_chawal\", \"",
+      "ms": 2090.725624999777,
+      "pred": null,
+      "p": 436,
+      "c": 64,
+      "raw": "{action: modify, customer: \"Megha Verma\", date: \"2026-08-10\", meal: \"dinner\", items: [{\"dish\": \"chole_chawal\", \"qty\": 1}], \"prefs\": null, time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[20/09/26, 8:52 PM] Tanvi Malhotra: aaj ka dabba aaya nahi?",
+    "gold": {
+      "action": "query",
+      "customer": "Tanvi Malhotra",
+      "date": "2026-09-20",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: query, customer: \"Tanvi Malhotra\", date: \"2025-09-20\", meal: null, items: [], prefs: [], time: null, re",
+      "ms": 1701.000875000318,
+      "pred": null,
+      "p": 435,
+      "c": 47,
+      "raw": "{action: query, customer: \"Tanvi Malhotra\", date: \"2025-09-20\", meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[03/08/26, 6:51 PM] Amit Kumar: kal se 8 tak mat bhejna",
+    "gold": {
+      "action": "pause",
+      "customer": "Amit Kumar",
+      "date": "2026-08-04",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: pause, customer: \"Amit Kumar\", date: null, meal: null, items: [], prefs: [], time: \"20:00\", repeat: nul",
+      "ms": 2296.773709000263,
+      "pred": null,
+      "p": 431,
+      "c": 40,
+      "raw": "{action: pause, customer: \"Amit Kumar\", date: null, meal: null, items: [], prefs: [], time: \"20:00\", repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[20/06/26, 8:46 PM] Kunal Agarwal: where is my tiffin",
+    "gold": {
+      "action": "query",
+      "customer": "Kunal Agarwal",
+      "date": "2026-06-20",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: \"query\", customer: \"Kunal Agarwal\", date: null, meal: null, items: [], prefs: [], time: null, repeat: n",
+      "ms": 2291.90887499999,
+      "pred": null,
+      "p": 429,
+      "c": 37,
+      "raw": "{action: \"query\", customer: \"Kunal Agarwal\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[07/08/26, 10:39 AM] Megha Verma: bhaiya aj do chole rice lunch 🙏",
+    "gold": {
+      "action": "order",
+      "customer": "Megha Verma",
+      "date": "2026-08-07",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: order, customer: \"Megha Verma\", date: \"2026-08-07\", meal: \"lunch\", items: [{\"dish\": \"chole_chawal\", \"qt",
+      "ms": 1934.5604999998613,
+      "pred": null,
+      "p": 437,
+      "c": 63,
+      "raw": "{action: order, customer: \"Megha Verma\", date: \"2026-08-07\", meal: \"lunch\", items: [{\"dish\": \"chole_chawal\", \"qty\": 2}], prefs: null, time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[04/08/26, 6:49 PM] Manish Jain: start weekdays ek thali for lunch me kal se, jain",
+    "gold": {
+      "action": "order",
+      "customer": "Manish Jain",
+      "date": "2026-08-05",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "jain"
+      ],
+      "time": null,
+      "repeat": "weekdays"
+    },
+    "out": {
+      "pred": {
+        "action": "resume",
+        "customer": "Manish Jain",
+        "date": "2026-08-05",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": "weekdays"
+      },
+      "ms": 2084.400457999891,
+      "p": 436,
+      "c": 102
+    }
+  },
+  {
+    "text": "[05/06/26, 1:56 PM] Abhishek Mehra: tiffin kab tak aayega?",
+    "gold": {
+      "action": "query",
+      "customer": "Abhishek Mehra",
+      "date": "2026-06-05",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Abhishek Mehra",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2084.934374999648,
+      "p": 433,
+      "c": 45
+    }
+  },
+  {
+    "text": "[20/08/26, 5:36 PM] Neha Sethi: pausing from tomorrow till 29/8",
+    "gold": {
+      "action": "pause",
+      "customer": "Neha Sethi",
+      "date": "2026-08-21",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: pause, customer: \"Neha Sethi\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}'",
+      "ms": 2074.56537500002,
+      "pred": null,
+      "p": 434,
+      "c": 37,
+      "raw": "{action: pause, customer: \"Neha Sethi\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[05/09/26, 9:08 PM] Tarun Khan: change kl dopahar to 2 veg thali",
+    "gold": {
+      "action": "modify",
+      "customer": "Tarun Khan",
+      "date": "2026-09-06",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Tarun Khan",
+        "date": "2026-09-05",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 1660.1915420001205,
+      "p": 434,
+      "c": 99
+    }
+  },
+  {
+    "text": "[08/05/26, 9:25 AM] Abhishek Mehra: bhaiya today do thali lunch me 1 bje 🙏",
+    "gold": {
+      "action": "order",
+      "customer": "Abhishek Mehra",
+      "date": "2026-05-08",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "13:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Abhishek Mehra",
+        "date": "2026-05-08",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2839.6136249998563,
+      "p": 462,
+      "c": 102
+    }
+  },
+  {
+    "text": "[04/09/26, 9:30 AM] Swati Reddy: aj raat ko cancel",
+    "gold": {
+      "action": "cancel",
+      "customer": "Swati Reddy",
+      "date": "2026-09-04",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: \"cancel\", customer: \"Swati Reddy\", date: \"2026-09-04\", meal: \"dinner\", items: [], prefs: [], time: null",
+      "ms": 2692.8340420004133,
+      "pred": null,
+      "p": 429,
+      "c": 49,
+      "raw": "{action: \"cancel\", customer: \"Swati Reddy\", date: \"2026-09-04\", meal: \"dinner\", items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[24/06/26, 9:03 PM] Siddharth Sharma: change tomorrow lunch to one veg thali",
+    "gold": {
+      "action": "modify",
+      "customer": "Siddharth Sharma",
+      "date": "2026-06-25",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: modify, customer: Siddharth Sharma, date: 2026-06-25, meal: lunch, items: [{dish: veg_thali, qty: 1}], ",
+      "ms": 2669.894749999912,
+      "pred": null,
+      "p": 432,
+      "c": 57,
+      "raw": "{action: modify, customer: Siddharth Sharma, date: 2026-06-25, meal: lunch, items: [{dish: veg_thali, qty: 1}], prefs: null, time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[02/05/26, 8:55 PM] Megha Verma: aaj ka dabba aaya nahi?",
+    "gold": {
+      "action": "query",
+      "customer": "Megha Verma",
+      "date": "2026-05-02",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: query, customer: \"Megha Verma\", date: \"2026-05-02\", meal: null, items: [], prefs: [], time: null, repea",
+      "ms": 3263.324415999705,
+      "pred": null,
+      "p": 434,
+      "c": 46,
+      "raw": "{action: query, customer: \"Megha Verma\", date: \"2026-05-02\", meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[01/05/26, 7:43 PM] Bhavna Kapoor: tomorrow dinner skip",
+    "gold": {
+      "action": "cancel",
+      "customer": "Bhavna Kapoor",
+      "date": "2026-05-02",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "pause",
+        "customer": "Bhavna Kapoor",
+        "date": "2026-05-02",
+        "meal": "dinner",
+        "items": [],
+        "prefs": [
+          "no_onion"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 1698.1859170000462,
+      "p": 452,
+      "c": 84
+    }
+  },
+  {
+    "text": "[04/09/26, 10:58 AM] Tanvi Bansal: aj afternoon two chole bhej dena 2 pm pyaaz nahi",
+    "gold": {
+      "action": "order",
+      "customer": "Tanvi Bansal",
+      "date": "2026-09-04",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "no_onion"
+      ],
+      "time": "14:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Tanvi Bansal",
+        "date": "2026-09-04",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 2
+          }
+        ],
+        "prefs": [
+          "no_onion"
+        ],
+        "time": "14:00",
+        "repeat": null
+      },
+      "ms": 2269.6517909998875,
+      "p": 443,
+      "c": 116
+    }
+  },
+  {
+    "text": "[21/06/26, 9:09 AM] Aakash Iyer: today raat ko mat bhejna",
+    "gold": {
+      "action": "cancel",
+      "customer": "Aakash Iyer",
+      "date": "2026-06-21",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: pause, customer: \"Aakash Iyer\", date: \"2026-06-21\", meal: \"dinner\", items: [], prefs: [], time: null, r",
+      "ms": 2256.2351659998967,
+      "pred": null,
+      "p": 432,
+      "c": 48,
+      "raw": "{action: pause, customer: \"Aakash Iyer\", date: \"2026-06-21\", meal: \"dinner\", items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[21/09/26, 6:01 PM] Harsh Mishra: bhaiya tomorrow ek dabba dopahar 🙏",
+    "gold": {
+      "action": "order",
+      "customer": "Harsh Mishra",
+      "date": "2026-09-22",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Harsh Mishra",
+        "date": "2026-09-22",
+        "meal": "lunch",
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2257.5727079997705,
+      "p": 437,
+      "c": 74
+    }
+  },
+  {
+    "text": "[17/09/26, 10:32 AM] Meera Chauhan: aaj ek dabba bhej dena afternoon",
+    "gold": {
+      "action": "order",
+      "customer": "Meera Chauhan",
+      "date": "2026-09-17",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Meera Chauhan",
+        "date": "2026-09-17",
+        "meal": "lunch",
+        "items": [],
+        "prefs": [],
+        "time": "16:00",
+        "repeat": null
+      },
+      "ms": 2242.0038750001368,
+      "p": 436,
+      "c": 79
+    }
+  },
+  {
+    "text": "[15/07/26, 8:35 PM] Tarun Singh: bhaiya tomorrow two thali dinner me 🙏 less spicy and 1 extra roti pack",
+    "gold": {
+      "action": "order",
+      "customer": "Tarun Singh",
+      "date": "2026-07-16",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        },
+        {
+          "dish": "roti_pack",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "invalid fields ['items']: {'action': 'order', 'customer': 'Tarun Singh', 'date': '2026-07-16', 'meal': 'dinner', 'items': [{'dish': 'thali', 'qty': 2}], 'prefs': ['less_spicy', 'extra_roti'], 'time': ",
+      "ms": 1908.0147089998718,
+      "pred": null,
+      "p": 443,
+      "c": 115,
+      "raw": "{\n  \"action\": \"order\",\n  \"customer\": \"Tarun Singh\",\n  \"date\": \"2026-07-16\",\n  \"meal\": \"dinner\",\n  \"items\": [\n    {\n      \"dish\": \"thali\",\n      \"qty\": 2\n    }\n  ],\n  \"prefs\": [\n    \"less_spicy\",\n    \"extra_roti\"\n  ],\n  \"time\": null,\n  \"repeat\": null\n}<|im_end|>"
+    }
+  },
+  {
+    "text": "[14/09/26, 7:40 PM] Mohit Bansal: bhaiya kal ek dabba dopahar 🙏",
+    "gold": {
+      "action": "order",
+      "customer": "Mohit Bansal",
+      "date": "2026-09-15",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Mohit Bansal",
+        "date": "2026-09-15",
+        "meal": "lunch",
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2088.858708999851,
+      "p": 437,
+      "c": 74
+    }
+  },
+  {
+    "text": "[12/08/26, 8:27 PM] Karan Saini: kal dinner ke liye 2 usual",
+    "gold": {
+      "action": "order",
+      "customer": "Karan Saini",
+      "date": "2026-08-13",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Karan Saini",
+        "date": "2026-08-13",
+        "meal": "dinner",
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2110.3404159998718,
+      "p": 433,
+      "c": 75
+    }
+  },
+  {
+    "text": "[11/06/26, 10:48 AM] Tanvi Malhotra: one dal aaj dopahar ko 12 baje tak mild",
+    "gold": {
+      "action": "order",
+      "customer": "Tanvi Malhotra",
+      "date": "2026-06-11",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": "12:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Tanvi Malhotra",
+        "date": "2026-06-11",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": "12:00",
+        "repeat": null
+      },
+      "ms": 2108.2179170002746,
+      "p": 441,
+      "c": 106
+    }
+  },
+  {
+    "text": "[25/09/26, 9:41 PM] Harsh Mishra: tomorrow ka afternoon two rajma kar do",
+    "gold": {
+      "action": "modify",
+      "customer": "Harsh Mishra",
+      "date": "2026-09-26",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "rajma_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Harsh Mishra",
+        "date": "2026-09-26",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "rajma_chawal",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": "14:00",
+        "repeat": null
+      },
+      "ms": 2114.1126249999616,
+      "p": 432,
+      "c": 106
+    }
+  },
+  {
+    "text": "[30/06/26, 1:45 PM] Shreya Bose: where is my tiffin",
+    "gold": {
+      "action": "query",
+      "customer": "Shreya Bose",
+      "date": "2026-06-30",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: \"query\", customer: \"Shreya Bose\", date: null, meal: null, items: [], prefs: [], time: null, repeat: nul",
+      "ms": 2112.808999999743,
+      "pred": null,
+      "p": 429,
+      "c": 37,
+      "raw": "{action: \"query\", customer: \"Shreya Bose\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[27/07/26, 8:14 PM] Aakash Kapoor: kal se 8 din ke liye band kar do, bahar ja rahe",
+    "gold": {
+      "action": "pause",
+      "customer": "Aakash Kapoor",
+      "date": "2026-07-28",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: pause, customer: \"Aakash Kapoor\", date: null, meal: null, items: [], prefs: [], time: null, repeat: nul",
+      "ms": 1761.4319579997755,
+      "pred": null,
+      "p": 459,
+      "c": 35,
+      "raw": "{action: pause, customer: \"Aakash Kapoor\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[28/09/26, 8:53 AM] Amit Bose: today dinner ke liye two dabba",
+    "gold": {
+      "action": "order",
+      "customer": "Amit Bose",
+      "date": "2026-09-28",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Amit Bose",
+        "date": "2026-09-28",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 2
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2406.7675000001145,
+      "p": 453,
+      "c": 109
+    }
+  },
+  {
+    "text": "[07/07/26, 9:34 PM] Aakash Kapoor: ek dabba tomorrow lunch me",
+    "gold": {
+      "action": "order",
+      "customer": "Aakash Kapoor",
+      "date": "2026-07-08",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Aakash Kapoor",
+        "date": "2026-07-08",
+        "meal": "lunch",
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2420.6645829999616,
+      "p": 429,
+      "c": 73
+    }
+  },
+  {
+    "text": "[04/08/26, 10:00 PM] Payal Jain: wapas aa gaye, kal se chalu karo",
+    "gold": {
+      "action": "resume",
+      "customer": "Payal Jain",
+      "date": "2026-08-05",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: resume, customer: \"Payal Jain\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}",
+      "ms": 1734.3818329995884,
+      "pred": null,
+      "p": 436,
+      "c": 35,
+      "raw": "{action: resume, customer: \"Payal Jain\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[19/07/26, 9:28 PM] Mohit Bansal: resume from tomorrow please",
+    "gold": {
+      "action": "resume",
+      "customer": "Mohit Bansal",
+      "date": "2026-07-20",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: resume, customer: Mohit Bansal, date: null, meal: null, items: [], prefs: [], time: null, repeat: null}",
+      "ms": 2053.334249999807,
+      "pred": null,
+      "p": 428,
+      "c": 35,
+      "raw": "{action: resume, customer: Mohit Bansal, date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[15/09/26, 8:07 PM] Nidhi Bansal: Can I get one chole chawal tomorrow for raat ko?",
+    "gold": {
+      "action": "order",
+      "customer": "Nidhi Bansal",
+      "date": "2026-09-16",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": "20:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Nidhi Bansal",
+        "date": "2026-09-16",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2063.5851249999178,
+      "p": 439,
+      "c": 102
+    }
+  },
+  {
+    "text": "[14/07/26, 10:34 PM] Meera Iyer: bhaiya kal do non veg raat ko 8:30 pm 🙏 (kam mirch)",
+    "gold": {
+      "action": "order",
+      "customer": "Meera Iyer",
+      "date": "2026-07-15",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": "20:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Meera Iyer",
+        "date": "2026-07-15",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": "20:30",
+        "repeat": null
+      },
+      "ms": 2381.438833000175,
+      "p": 449,
+      "c": 116
+    }
+  },
+  {
+    "text": "[15/06/26, 8:07 PM] Aakash Iyer: tomorrow ka raat ko do chicken thali kar do by 8:30",
+    "gold": {
+      "action": "modify",
+      "customer": "Aakash Iyer",
+      "date": "2026-06-16",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "20:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Aakash Iyer",
+        "date": "2026-06-16",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": "20:30",
+        "repeat": null
+      },
+      "ms": 2093.833082999936,
+      "p": 441,
+      "c": 106
+    }
+  },
+  {
+    "text": "[18/08/26, 7:14 AM] Ritu Sharma: do thali aaj dopahar ko by 1:30",
+    "gold": {
+      "action": "order",
+      "customer": "Ritu Sharma",
+      "date": "2026-08-18",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "13:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Ritu Sharma",
+        "date": "2026-08-18",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": "13:30",
+        "repeat": null
+      },
+      "ms": 2093.9127910000934,
+      "p": 457,
+      "c": 104
+    }
+  },
+  {
+    "text": "[17/08/26, 9:03 PM] Rahul Agarwal: kl dinner ek thali bhej dena",
+    "gold": {
+      "action": "order",
+      "customer": "Rahul Agarwal",
+      "date": "2026-08-18",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "invalid fields ['items']: {'action': 'order', 'customer': 'Rahul Agarwal', 'date': '2026-08-17', 'meal': 'dinner', 'items': [{'dish': 'thali', 'qty': 1}], 'prefs': [], 'time': None, 'repeat': None}",
+      "ms": 2093.6657500001274,
+      "pred": null,
+      "p": 433,
+      "c": 99,
+      "raw": "{\n  \"action\": \"order\",\n  \"customer\": \"Rahul Agarwal\",\n  \"date\": \"2026-08-17\",\n  \"meal\": \"dinner\",\n  \"items\": [\n    {\n      \"dish\": \"thali\",\n      \"qty\": 1\n    }\n  ],\n  \"prefs\": [],\n  \"time\": null,\n  \"repeat\": null\n}<|im_end|>"
+    }
+  },
+  {
+    "text": "[11/05/26, 8:42 AM] Tanvi Mehra: aj teen dabba bhej dena lunch me",
+    "gold": {
+      "action": "order",
+      "customer": "Tanvi Mehra",
+      "date": "2026-05-11",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 3
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Tanvi Mehra",
+        "date": "2026-05-11",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 3
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2100.7864170001085,
+      "p": 455,
+      "c": 100
+    }
+  },
+  {
+    "text": "[28/09/26, 1:45 PM] Tarun Khan: bill bhej do",
+    "gold": {
+      "action": "query",
+      "customer": "Tarun Khan",
+      "date": null,
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Tarun Khan",
+        "date": "2026-09-28",
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2090.4623329997776,
+      "p": 428,
+      "c": 53
+    }
+  },
+  {
+    "text": "[29/08/26, 10:07 AM] Amit Bose: today do thali raat",
+    "gold": {
+      "action": "order",
+      "customer": "Amit Bose",
+      "date": "2026-08-29",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Amit Bose",
+        "date": "2026-08-29",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2076.8135419998544,
+      "p": 429,
+      "c": 99
+    }
+  },
+  {
+    "text": "[14/07/26, 8:38 PM] Mohit Bansal: two dabba kal dopahar ko",
+    "gold": {
+      "action": "order",
+      "customer": "Mohit Bansal",
+      "date": "2026-07-15",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Mohit Bansal",
+        "date": "2026-07-15",
+        "meal": "lunch",
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2038.3821669997815,
+      "p": 432,
+      "c": 74
+    }
+  },
+  {
+    "text": "[11/05/26, 7:09 AM] Tarun Singh: aaj dinner me 3 dabba bhej dena kam mirch, ek roti pack extra",
+    "gold": {
+      "action": "order",
+      "customer": "Tarun Singh",
+      "date": "2026-05-11",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 3
+        },
+        {
+          "dish": "roti_pack",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Tarun Singh",
+        "date": "2026-05-11",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 3
+          },
+          {
+            "dish": "roti_pack",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2100.843583000369,
+      "p": 444,
+      "c": 132
+    }
+  },
+  {
+    "text": "[26/08/26, 7:23 PM] Meera Mishra: tomorrow lunch ke liye 1 dal rice , without rice",
+    "gold": {
+      "action": "order",
+      "customer": "Meera Mishra",
+      "date": "2026-08-27",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "no_rice"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Meera Mishra",
+        "date": "2026-08-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "no_rice"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2107.9371659998287,
+      "p": 436,
+      "c": 110
+    }
+  },
+  {
+    "text": "[28/05/26, 8:03 PM] Varun Mishra: start Monday to Friday 2 dabba for dopahar ko kal se, no onion",
+    "gold": {
+      "action": "order",
+      "customer": "Varun Mishra",
+      "date": "2026-05-29",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "no_onion"
+      ],
+      "time": null,
+      "repeat": "weekdays"
+    },
+    "out": {
+      "pred": {
+        "action": "resume",
+        "customer": "Varun Mishra",
+        "date": "2026-05-28",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 2
+          }
+        ],
+        "prefs": [
+          "no_onion"
+        ],
+        "time": null,
+        "repeat": "weekdays"
+      },
+      "ms": 2162.4183750000157,
+      "p": 468,
+      "c": 114
+    }
+  },
+  {
+    "text": "[05/07/26, 8:55 AM] Aakash Kapoor: aaj ka raat cancel kar do",
+    "gold": {
+      "action": "cancel",
+      "customer": "Aakash Kapoor",
+      "date": "2026-07-05",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: \"cancel\", customer: \"Aakash Kapoor\", date: \"2026-07-05\", meal: \"dinner\", items: [], prefs: [], time: nu",
+      "ms": 1774.2324159999043,
+      "pred": null,
+      "p": 431,
+      "c": 48,
+      "raw": "{action: \"cancel\", customer: \"Aakash Kapoor\", date: \"2026-07-05\", meal: \"dinner\", items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[19/06/26, 9:40 PM] Meera Chauhan: kal se 22 tak mat bhejna",
+    "gold": {
+      "action": "pause",
+      "customer": "Meera Chauhan",
+      "date": "2026-06-20",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "pause",
+        "customer": "Meera Chauhan",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": "daily"
+      },
+      "ms": 2089.8337089997767,
+      "p": 454,
+      "c": 64
+    }
+  },
+  {
+    "text": "[23/08/26, 1:35 PM] Isha Gupta: kitna hua is mahine ka?",
+    "gold": {
+      "action": "query",
+      "customer": "Isha Gupta",
+      "date": null,
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: query, customer: \"Isha Gupta\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}'",
+      "ms": 1756.401666000329,
+      "pred": null,
+      "p": 432,
+      "c": 35,
+      "raw": "{action: query, customer: \"Isha Gupta\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[22/06/26, 9:18 PM] Meera Chauhan: kl 1 thali bhej dena lunch me 12 baje",
+    "gold": {
+      "action": "order",
+      "customer": "Meera Chauhan",
+      "date": "2026-06-23",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": "12:00",
+      "repeat": null
+    },
+    "out": {
+      "error": "invalid fields ['items']: {'action': 'order', 'customer': 'Meera Chauhan', 'date': '2026-06-23', 'meal': 'lunch', 'items': [{'dish': 'thali', 'qty': 1}], 'prefs': [], 'time': '12:00', 'repeat': None}",
+      "ms": 2060.2378749999843,
+      "pred": null,
+      "p": 441,
+      "c": 104,
+      "raw": "{\n  \"action\": \"order\",\n  \"customer\": \"Meera Chauhan\",\n  \"date\": \"2026-06-23\",\n  \"meal\": \"lunch\",\n  \"items\": [\n    {\n      \"dish\": \"thali\",\n      \"qty\": 1\n    }\n  ],\n  \"prefs\": [],\n  \"time\": \"12:00\",\n  \"repeat\": null\n}<|im_end|>"
+    }
+  },
+  {
+    "text": "[06/09/26, 7:48 PM] Tanvi Malhotra: bhaiya kl ek dabba raat 🙏 (less spicy)",
+    "gold": {
+      "action": "order",
+      "customer": "Tanvi Malhotra",
+      "date": "2026-09-07",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Tanvi Malhotra",
+        "date": "2026-09-07",
+        "meal": "dinner",
+        "items": [],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2053.283624999949,
+      "p": 467,
+      "c": 85
+    }
+  },
+  {
+    "text": "[21/06/26, 5:15 PM] Jyoti Sharma: Mon se Fri ek thali dinner me from tomorrow",
+    "gold": {
+      "action": "order",
+      "customer": "Jyoti Sharma",
+      "date": "2026-06-22",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": "weekdays"
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Jyoti Sharma",
+        "date": "2026-06-22",
+        "meal": "dinner",
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": "weekdays"
+      },
+      "ms": 2095.3428339998936,
+      "p": 454,
+      "c": 77
+    }
+  },
+  {
+    "text": "[22/08/26, 9:14 PM] Priya Agarwal: kl dopahar cancel",
+    "gold": {
+      "action": "cancel",
+      "customer": "Priya Agarwal",
+      "date": "2026-08-23",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "cancel",
+        "customer": "Priya Agarwal",
+        "date": "2026-08-22",
+        "meal": "lunch",
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2094.963541999732,
+      "p": 429,
+      "c": 74
+    }
+  },
+  {
+    "text": "[06/10/26, 8:41 PM] Amit Kumar: kal lunch ke liye 2 chole (kam tel)",
+    "gold": {
+      "action": "order",
+      "customer": "Amit Kumar",
+      "date": "2026-10-07",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "less_oil"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Amit Kumar",
+        "date": "2026-10-07",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 2
+          }
+        ],
+        "prefs": [
+          "less_oil"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2094.5554579998316,
+      "p": 435,
+      "c": 110
+    }
+  },
+  {
+    "text": "[06/09/26, 7:20 AM] Harsh Mishra: aj dopahar ko do thali bhej dena",
+    "gold": {
+      "action": "order",
+      "customer": "Harsh Mishra",
+      "date": "2026-09-06",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "invalid fields ['items']: {'action': 'order', 'customer': 'Harsh Mishra', 'date': '2026-09-06', 'meal': 'lunch', 'items': [{'dish': 'thali', 'qty': 2}], 'prefs': [], 'time': None, 'repeat': None}",
+      "ms": 2335.844750000433,
+      "pred": null,
+      "p": 437,
+      "c": 99,
+      "raw": "{\n  \"action\": \"order\",\n  \"customer\": \"Harsh Mishra\",\n  \"date\": \"2026-09-06\",\n  \"meal\": \"lunch\",\n  \"items\": [\n    {\n      \"dish\": \"thali\",\n      \"qty\": 2\n    }\n  ],\n  \"prefs\": [],\n  \"time\": null,\n  \"repeat\": null\n}<|im_end|>"
+    }
+  },
+  {
+    "text": "[22/07/26, 9:44 AM] Swati Reddy: today 1 dal chawal lunch me 2:30 baje",
+    "gold": {
+      "action": "order",
+      "customer": "Swati Reddy",
+      "date": "2026-07-22",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": "14:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Swati Reddy",
+        "date": "2026-07-22",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": "14:30",
+        "repeat": null
+      },
+      "ms": 2307.06575000022,
+      "p": 439,
+      "c": 105
+    }
+  },
+  {
+    "text": "[22/05/26, 8:05 AM] Abhishek Singh: Please send ek thali today lunch me 12 baje tak (kam mirch)",
+    "gold": {
+      "action": "order",
+      "customer": "Abhishek Singh",
+      "date": "2026-05-22",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": "12:00",
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: order, customer: \"Abhishek Singh\", date: \"2026-05-22\", meal: \"lunch\", items: [{\"dish\": \"veg_thali\", \"qt",
+      "ms": 2205.719584000235,
+      "pred": null,
+      "p": 443,
+      "c": 70,
+      "raw": "{action: order, customer: \"Abhishek Singh\", date: \"2026-05-22\", meal: \"lunch\", items: [{\"dish\": \"veg_thali\", \"qty\": 1}], prefs: [\"less_spicy\"], time: \"12:00\", repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[20/07/26, 9:01 AM] Anjali Sethi: aaj one tiffin lunch 12 baje tak kam teekha",
+    "gold": {
+      "action": "order",
+      "customer": "Anjali Sethi",
+      "date": "2026-07-20",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": "12:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Anjali Sethi",
+        "date": "2025-07-20",
+        "meal": "lunch",
+        "items": [],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": "12:00",
+        "repeat": null
+      },
+      "ms": 2235.2107500000784,
+      "p": 466,
+      "c": 89
+    }
+  },
+  {
+    "text": "[22/09/26, 8:15 PM] Neha Reddy: do rajma rice kl dopahar",
+    "gold": {
+      "action": "order",
+      "customer": "Neha Reddy",
+      "date": "2026-09-23",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "rajma_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Neha Reddy",
+        "date": "2026-09-23",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "rajma_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3237.611249999645,
+      "p": 432,
+      "c": 102
+    }
+  },
+  {
+    "text": "[30/06/26, 6:05 PM] Tarun Agarwal: kl lunch two thali bhej dena",
+    "gold": {
+      "action": "order",
+      "customer": "Tarun Agarwal",
+      "date": "2026-07-01",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: order, customer: \"Tarun Agarwal\", date: \"2026-06-30\", meal: \"lunch\", items: [{\"dish\": \"thali\", \"qty\": 2",
+      "ms": 1863.9001250003275,
+      "pred": null,
+      "p": 434,
+      "c": 60,
+      "raw": "{action: order, customer: \"Tarun Agarwal\", date: \"2026-06-30\", meal: \"lunch\", items: [{\"dish\": \"thali\", \"qty\": 2}], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[24/05/26, 1:47 PM] Abhishek Arora: kitna hua is mahine ka?",
+    "gold": {
+      "action": "query",
+      "customer": "Abhishek Arora",
+      "date": null,
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: query, customer: \"Abhishek Arora\", date: null, meal: null, items: [], prefs: [], time: null, repeat: nu",
+      "ms": 2660.6305000000248,
+      "pred": null,
+      "p": 434,
+      "c": 37,
+      "raw": "{action: query, customer: \"Abhishek Arora\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[25/08/26, 8:07 PM] Harsh Mishra: tomorrow ka lunch me ek paneer wala kar do 2:30 baje",
+    "gold": {
+      "action": "modify",
+      "customer": "Harsh Mishra",
+      "date": "2026-08-26",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "paneer_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": "14:30",
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: modify, customer: Harsh Mishra, date: 2026-08-26, meal: lunch, items: [{dish: paneer_thali, qty: 1}], p",
+      "ms": 2672.5415000000794,
+      "pred": null,
+      "p": 442,
+      "c": 63,
+      "raw": "{action: modify, customer: Harsh Mishra, date: 2026-08-26, meal: lunch, items: [{dish: paneer_thali, qty: 1}], prefs: null, time: 14:30, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[05/05/26, 8:47 PM] Varun Das: tiffin kab tak aayega?",
+    "gold": {
+      "action": "query",
+      "customer": "Varun Das",
+      "date": "2026-05-05",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Varun Das",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2666.518584000187,
+      "p": 431,
+      "c": 43
+    }
+  },
+  {
+    "text": "[14/07/26, 8:30 PM] Arjun Gupta: bhaiya kl 2 dal rice dinner 🙏. pyaaz nahi, roti zyada please and 1 extra roti pack",
+    "gold": {
+      "action": "order",
+      "customer": "Arjun Gupta",
+      "date": "2026-07-15",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 2
+        },
+        {
+          "dish": "roti_pack",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "extra_roti",
+        "no_onion"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Arjun Gupta",
+        "date": "2026-07-15",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "no_onion",
+          "extra_roti"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2645.7057909997275,
+      "p": 452,
+      "c": 116
+    }
+  },
+  {
+    "text": "[16/06/26, 10:33 PM] Megha Verma: bhaiya kl 2 chole chawal night 🙏",
+    "gold": {
+      "action": "order",
+      "customer": "Megha Verma",
+      "date": "2026-06-17",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Megha Verma",
+        "date": "2026-06-15",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2737.953665999612,
+      "p": 439,
+      "c": 101
+    }
+  },
+  {
+    "text": "[04/07/26, 9:11 PM] Siddharth Jain: kl ka dopahar two dabba kar do 1 pm",
+    "gold": {
+      "action": "modify",
+      "customer": "Siddharth Jain",
+      "date": "2026-07-05",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "13:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Siddharth Jain",
+        "date": "2026-07-04",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": "13:00",
+        "repeat": null
+      },
+      "ms": 2093.8822080001955,
+      "p": 437,
+      "c": 106
+    }
+  },
+  {
+    "text": "[28/07/26, 6:39 PM] Tarun Agarwal: kal se 31 tak mat bhejna",
+    "gold": {
+      "action": "pause",
+      "customer": "Tarun Agarwal",
+      "date": "2026-07-29",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: pause, customer: \"Tarun Agarwal\", date: null, meal: null, items: [], prefs: [], time: null, repeat: nul",
+      "ms": 1760.0827919995936,
+      "pred": null,
+      "p": 434,
+      "c": 36,
+      "raw": "{action: pause, customer: \"Tarun Agarwal\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[04/06/26, 10:05 PM] Karan Saini: change kal raat ko to do dabba",
+    "gold": {
+      "action": "modify",
+      "customer": "Karan Saini",
+      "date": "2026-06-05",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Karan Saini",
+        "date": "2026-06-05",
+        "meal": "dinner",
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2450.5102090001856,
+      "p": 456,
+      "c": 75
+    }
+  },
+  {
+    "text": "[19/07/26, 10:21 PM] Anjali Sharma: 7 din tiffin nahi chahiye, out of station",
+    "gold": {
+      "action": "pause",
+      "customer": "Anjali Sharma",
+      "date": "2026-07-20",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: pause, customer: \"Anjali Sharma\", date: null, meal: null, items: [], prefs: [], time: null, repeat: nul",
+      "ms": 1746.427374999712,
+      "pred": null,
+      "p": 438,
+      "c": 35,
+      "raw": "{action: pause, customer: \"Anjali Sharma\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[03/10/26, 8:27 PM] Amit Bose: change kl raat ko to one chicken",
+    "gold": {
+      "action": "modify",
+      "customer": "Amit Bose",
+      "date": "2026-10-04",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Amit Bose",
+        "date": "2026-10-03",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2051.702415999898,
+      "p": 430,
+      "c": 100
+    }
+  },
+  {
+    "text": "[17/07/26, 6:54 PM] Isha Bansal: kl lunch ke liye do dal chawal",
+    "gold": {
+      "action": "order",
+      "customer": "Isha Bansal",
+      "date": "2026-07-18",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Isha Bansal",
+        "date": "2026-07-17",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2463.615832999949,
+      "p": 433,
+      "c": 100
+    }
+  },
+  {
+    "text": "[07/07/26, 9:26 PM] Tarun Agarwal: kal se 16 tak mat bhejna",
+    "gold": {
+      "action": "pause",
+      "customer": "Tarun Agarwal",
+      "date": "2026-07-08",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: pause, customer: \"Tarun Agarwal\", date: null, meal: null, items: [], prefs: [], time: null, repeat: nul",
+      "ms": 2107.8393329999017,
+      "pred": null,
+      "p": 434,
+      "c": 36,
+      "raw": "{action: pause, customer: \"Tarun Agarwal\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[11/07/26, 1:54 PM] Priya Agarwal: kitna hua is mahine ka?",
+    "gold": {
+      "action": "query",
+      "customer": "Priya Agarwal",
+      "date": null,
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: query, customer: \"Priya Agarwal\", date: null, meal: null, items: [], prefs: [], time: null, repeat: nul",
+      "ms": 2115.01300000009,
+      "pred": null,
+      "p": 454,
+      "c": 36,
+      "raw": "{action: query, customer: \"Priya Agarwal\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[16/08/26, 7:01 PM] Tanvi Malhotra: bhaiya kl one dal dopahar ko 🙏",
+    "gold": {
+      "action": "order",
+      "customer": "Tanvi Malhotra",
+      "date": "2026-08-17",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Tanvi Malhotra",
+        "date": "2026-08-15",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2145.088499999929,
+      "p": 438,
+      "c": 101
+    }
+  },
+  {
+    "text": "[04/08/26, 10:38 PM] Amit Kumar: kal se 8 din ke liye band kar do, bahar ja rahe",
+    "gold": {
+      "action": "pause",
+      "customer": "Amit Kumar",
+      "date": "2026-08-05",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: \"pause\", customer: \"Amit Kumar\", date: \"2026-08-04\", meal: null, items: [], prefs: [], time: null, repe",
+      "ms": 2116.062791999866,
+      "pred": null,
+      "p": 440,
+      "c": 46,
+      "raw": "{action: \"pause\", customer: \"Amit Kumar\", date: \"2026-08-04\", meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[21/05/26, 8:03 PM] Siddharth Arora: kl lunch three paneer wala bhej dena mild",
+    "gold": {
+      "action": "order",
+      "customer": "Siddharth Arora",
+      "date": "2026-05-22",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "paneer_thali",
+          "qty": 3
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Siddharth Arora",
+        "date": "2026-05-21",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "paneer_thali",
+            "qty": 3
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2136.2121670003944,
+      "p": 438,
+      "c": 113
+    }
+  },
+  {
+    "text": "[11/06/26, 8:36 PM] Arjun Gupta: tiffin kab tak aayega?",
+    "gold": {
+      "action": "query",
+      "customer": "Arjun Gupta",
+      "date": "2026-06-11",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: query, customer: \"Arjun Gupta\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}",
+      "ms": 2143.3970409998437,
+      "pred": null,
+      "p": 431,
+      "c": 35,
+      "raw": "{action: query, customer: \"Arjun Gupta\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[12/08/26, 7:42 PM] Abhishek Singh: tomorrow lunch me do chicken kar dena instead",
+    "gold": {
+      "action": "modify",
+      "customer": "Abhishek Singh",
+      "date": "2026-08-13",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Abhishek Singh",
+        "date": "2026-08-13",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2462.735542000246,
+      "p": 433,
+      "c": 101
+    }
+  },
+  {
+    "text": "[10/06/26, 1:54 PM] Nikhil Nair: where is my tiffin",
+    "gold": {
+      "action": "query",
+      "customer": "Nikhil Nair",
+      "date": "2026-06-10",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: query, customer: \"Nikhil Nair\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}",
+      "ms": 2111.6900410002017,
+      "pred": null,
+      "p": 429,
+      "c": 37,
+      "raw": "{action: query, customer: \"Nikhil Nair\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[19/05/26, 10:08 AM] Neha Sethi: today dinner: one dabba (jain)",
+    "gold": {
+      "action": "order",
+      "customer": "Neha Sethi",
+      "date": "2026-05-19",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "jain"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Neha Sethi",
+        "date": "2026-05-19",
+        "meal": "dinner",
+        "items": [],
+        "prefs": [
+          "jain"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2115.201834000345,
+      "p": 435,
+      "c": 84
+    }
+  },
+  {
+    "text": "[13/05/26, 1:40 PM] Abhishek Mehra: where is my tiffin",
+    "gold": {
+      "action": "query",
+      "customer": "Abhishek Mehra",
+      "date": "2026-05-13",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: query, customer: \"Abhishek Mehra\", date: null, meal: null, items: [], prefs: [], time: null, repeat: nu",
+      "ms": 1780.1754579995759,
+      "pred": null,
+      "p": 430,
+      "c": 37,
+      "raw": "{action: query, customer: \"Abhishek Mehra\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[15/09/26, 10:24 AM] Swati Reddy: aaj one dal raat ko 9 bje",
+    "gold": {
+      "action": "order",
+      "customer": "Swati Reddy",
+      "date": "2026-09-15",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": "21:00",
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: order, customer: \"Swati Reddy\", date: \"2026-09-15\", meal: \"dinner\", items: [{\"dish\": \"dal_chawal\", \"qty",
+      "ms": 1781.7708749998928,
+      "pred": null,
+      "p": 436,
+      "c": 67,
+      "raw": "{action: order, customer: \"Swati Reddy\", date: \"2026-09-15\", meal: \"dinner\", items: [{\"dish\": \"dal_chawal\", \"qty\": 1}], prefs: null, time: \"21:00\", repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[05/07/26, 10:49 PM] Jyoti Sharma: kal se 6 din ke liye band kar do, bahar ja rahe",
+    "gold": {
+      "action": "pause",
+      "customer": "Jyoti Sharma",
+      "date": "2026-07-06",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: \"pause\", customer: \"Jyoti Sharma\", date: \"2026-07-05\", meal: null, items: [], prefs: [], time: null, re",
+      "ms": 2051.2134169998717,
+      "pred": null,
+      "p": 442,
+      "c": 47,
+      "raw": "{action: \"pause\", customer: \"Jyoti Sharma\", date: \"2026-07-05\", meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[18/06/26, 7:46 PM] Meera Iyer: kal afternoon two chicken bhej dena 2:30 pm. kam mirch please",
+    "gold": {
+      "action": "order",
+      "customer": "Meera Iyer",
+      "date": "2026-06-19",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": "14:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Meera Iyer",
+        "date": "2026-06-18",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 2
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": "14:30",
+        "repeat": null
+      },
+      "ms": 2041.3419589999648,
+      "p": 444,
+      "c": 116
+    }
+  },
+  {
+    "text": "[30/09/26, 1:55 PM] Meera Nair: where is my tiffin",
+    "gold": {
+      "action": "query",
+      "customer": "Meera Nair",
+      "date": "2026-09-30",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: query, customer: \"Meera Nair\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}'",
+      "ms": 2033.9047499996923,
+      "pred": null,
+      "p": 429,
+      "c": 36,
+      "raw": "{action: query, customer: \"Meera Nair\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[06/09/26, 8:42 PM] Kunal Gupta: where is my tiffin",
+    "gold": {
+      "action": "query",
+      "customer": "Kunal Gupta",
+      "date": "2026-09-06",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Kunal Gupta",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [
+          "less_spicy",
+          "extra_spicy"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 1709.599833000084,
+      "p": 456,
+      "c": 78
+    }
+  },
+  {
+    "text": "[19/06/26, 10:11 AM] Vikas Khan: aj dinner ke liye one usual 8:30 baje tak",
+    "gold": {
+      "action": "order",
+      "customer": "Vikas Khan",
+      "date": "2026-06-19",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "rajma_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": "20:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "pause",
+        "customer": "Vikas Khan",
+        "date": "2026-06-19",
+        "meal": "dinner",
+        "items": [],
+        "prefs": [],
+        "time": "08:30",
+        "repeat": null
+      },
+      "ms": 2068.596332999732,
+      "p": 459,
+      "c": 78
+    }
+  },
+  {
+    "text": "[13/10/26, 7:03 PM] Ritu Sharma: kal lunch ek dabba bhej dena",
+    "gold": {
+      "action": "order",
+      "customer": "Ritu Sharma",
+      "date": "2026-10-14",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: order, customer: \"Ritu Sharma\", date: \"2026-10-14\", meal: \"lunch\", items: [{\"dish\": \"veg_thali\", \"qty\":",
+      "ms": 1687.805125000068,
+      "pred": null,
+      "p": 452,
+      "c": 60,
+      "raw": "{action: order, customer: \"Ritu Sharma\", date: \"2026-10-14\", meal: \"lunch\", items: [{\"dish\": \"veg_thali\", \"qty\": 1}], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[30/09/26, 9:27 PM] Priya Iyer: tomorrow dopahar: teen veg thali 1:00 pm",
+    "gold": {
+      "action": "order",
+      "customer": "Priya Iyer",
+      "date": "2026-10-01",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 3
+        }
+      ],
+      "prefs": [],
+      "time": "13:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Priya Iyer",
+        "date": "2026-09-31",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 3
+          }
+        ],
+        "prefs": [],
+        "time": "13:00",
+        "repeat": null
+      },
+      "ms": 2147.6902500003234,
+      "p": 439,
+      "c": 105
+    }
+  },
+  {
+    "text": "[14/07/26, 8:41 PM] Megha Sharma: where is my tiffin",
+    "gold": {
+      "action": "query",
+      "customer": "Megha Sharma",
+      "date": "2026-07-14",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: query, customer: \"Megha Sharma\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null",
+      "ms": 2133.55858299974,
+      "pred": null,
+      "p": 428,
+      "c": 35,
+      "raw": "{action: query, customer: \"Megha Sharma\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[13/10/26, 10:40 AM] Pooja Nair: 3 dabba aj dopahar ko kam tel",
+    "gold": {
+      "action": "order",
+      "customer": "Pooja Nair",
+      "date": "2026-10-13",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 3
+        }
+      ],
+      "prefs": [
+        "less_oil"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Pooja Nair",
+        "date": "2026-10-13",
+        "meal": "lunch",
+        "items": [],
+        "prefs": [
+          "less_oil"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2149.322416999894,
+      "p": 437,
+      "c": 85
+    }
+  },
+  {
+    "text": "[20/05/26, 8:20 AM] Mohit Bansal: today one veg thali lunch me",
+    "gold": {
+      "action": "order",
+      "customer": "Mohit Bansal",
+      "date": "2026-05-20",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Mohit Bansal",
+        "date": "2025-05-20",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2155.9589580001557,
+      "p": 431,
+      "c": 100
+    }
+  },
+  {
+    "text": "[14/05/26, 7:18 PM] Bhavna Bose: Can I get do dabba tomorrow for lunch me?",
+    "gold": {
+      "action": "order",
+      "customer": "Bhavna Bose",
+      "date": "2026-05-15",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Bhavna Bose",
+        "date": "2026-05-15",
+        "meal": "lunch",
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2162.336958999731,
+      "p": 435,
+      "c": 74
+    }
+  },
+  {
+    "text": "[24/08/26, 8:30 PM] Bhavna Bose: tomorrow ka dopahar ko 2 chole chawal kar do",
+    "gold": {
+      "action": "modify",
+      "customer": "Bhavna Bose",
+      "date": "2026-08-25",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Bhavna Bose",
+        "date": "2026-08-25",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2185.328374999699,
+      "p": 438,
+      "c": 101
+    }
+  },
+  {
+    "text": "[29/07/26, 7:27 PM] Aakash Iyer: tomorrow dinner: do usual",
+    "gold": {
+      "action": "order",
+      "customer": "Aakash Iyer",
+      "date": "2026-07-30",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "resume",
+        "customer": "Aakash Iyer",
+        "date": "2026-07-30",
+        "meal": "dinner",
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2073.9767919999395,
+      "p": 429,
+      "c": 74
+    }
+  },
+  {
+    "text": "[29/07/26, 8:11 PM] Isha Bansal: bhaiya tomorrow 1 dal rice afternoon 🙏",
+    "gold": {
+      "action": "order",
+      "customer": "Isha Bansal",
+      "date": "2026-07-30",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Isha Bansal",
+        "date": "2026-07-30",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2777.3989590000383,
+      "p": 436,
+      "c": 100
+    }
+  },
+  {
+    "text": "[09/09/26, 10:02 PM] Kunal Yadav: kl lunch me do thali bhej dena",
+    "gold": {
+      "action": "order",
+      "customer": "Kunal Yadav",
+      "date": "2026-09-10",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "invalid fields ['items']: {'action': 'modify', 'customer': 'Kunal Yadav', 'date': '2026-09-10', 'meal': 'lunch', 'items': [{'dish': 'thali', 'qty': 2}], 'prefs': [], 'time': None, 'repeat': None}",
+      "ms": 2081.5046249999796,
+      "pred": null,
+      "p": 436,
+      "c": 99,
+      "raw": "{\n  \"action\": \"modify\",\n  \"customer\": \"Kunal Yadav\",\n  \"date\": \"2026-09-10\",\n  \"meal\": \"lunch\",\n  \"items\": [\n    {\n      \"dish\": \"thali\",\n      \"qty\": 2\n    }\n  ],\n  \"prefs\": [],\n  \"time\": null,\n  \"repeat\": null\n}<|im_end|>"
+    }
+  },
+  {
+    "text": "[07/08/26, 9:54 AM] Meera Chauhan: today one veg thali bhej dena dopahar ko",
+    "gold": {
+      "action": "order",
+      "customer": "Meera Chauhan",
+      "date": "2026-08-07",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Meera Chauhan",
+        "date": "2026-08-07",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": "09:54",
+        "repeat": null
+      },
+      "ms": 2100.4032499999994,
+      "p": 458,
+      "c": 105
+    }
+  },
+  {
+    "text": "[31/07/26, 8:43 PM] Anjali Nair: abhi tak nahi aaya",
+    "gold": {
+      "action": "query",
+      "customer": "Anjali Nair",
+      "date": "2026-07-31",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: query, customer: \"Anjali Nair\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}",
+      "ms": 2060.6715839999197,
+      "pred": null,
+      "p": 431,
+      "c": 36,
+      "raw": "{action: query, customer: \"Anjali Nair\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[17/05/26, 10:18 PM] Tanvi Agarwal: kal se phir se start kar do",
+    "gold": {
+      "action": "resume",
+      "customer": "Tanvi Agarwal",
+      "date": "2026-05-18",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: resume, customer: \"Tanvi Agarwal\", date: null, meal: null, items: [], prefs: [], time: null, repeat: nu",
+      "ms": 2111.2674579999293,
+      "pred": null,
+      "p": 433,
+      "c": 36,
+      "raw": "{action: resume, customer: \"Tanvi Agarwal\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[23/07/26, 8:25 PM] Sahil Mishra: tomorrow lunch ke liye ek dal",
+    "gold": {
+      "action": "order",
+      "customer": "Sahil Mishra",
+      "date": "2026-07-24",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: order, customer: \"Sahil Mishra\", date: \"2026-07-24\", meal: \"lunch\", items: [{\"dish\": \"dal_chawal\", \"qty",
+      "ms": 2083.395209000173,
+      "pred": null,
+      "p": 431,
+      "c": 63,
+      "raw": "{action: order, customer: \"Sahil Mishra\", date: \"2026-07-24\", meal: \"lunch\", items: [{\"dish\": \"dal_chawal\", \"qty\": 1}], prefs: null, time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[11/08/26, 8:43 AM] Tanvi Malhotra: aaj dopahar 1 dal bhej dena 1 baje",
+    "gold": {
+      "action": "order",
+      "customer": "Tanvi Malhotra",
+      "date": "2026-08-11",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": "13:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Tanvi Malhotra",
+        "date": "2026-08-11",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": "13:00",
+        "repeat": null
+      },
+      "ms": 2058.518291999917,
+      "p": 442,
+      "c": 106
+    }
+  },
+  {
+    "text": "[21/09/26, 7:46 AM] Tarun Singh: bhaiya aaj three usual raat ko 🙏",
+    "gold": {
+      "action": "order",
+      "customer": "Tarun Singh",
+      "date": "2026-09-21",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 3
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Tarun Singh",
+        "date": "2026-09-21",
+        "meal": "dinner",
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2043.1284999999662,
+      "p": 436,
+      "c": 73
+    }
+  },
+  {
+    "text": "[10/09/26, 9:35 AM] Anjali Sharma: do rajma rice aj dopahar (no onion, no rice), extra roti",
+    "gold": {
+      "action": "order",
+      "customer": "Anjali Sharma",
+      "date": "2026-09-10",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "rajma_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "extra_roti",
+        "no_onion",
+        "no_rice"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Anjali Sharma",
+        "date": "2026-09-10",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "rajma_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "no_onion",
+          "no_rice",
+          "extra_roti"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2104.364083999826,
+      "p": 440,
+      "c": 124
+    }
+  },
+  {
+    "text": "[11/06/26, 10:01 PM] Megha Sharma: pausing from tomorrow till 14/6",
+    "gold": {
+      "action": "pause",
+      "customer": "Megha Sharma",
+      "date": "2026-06-12",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "pause",
+        "customer": "Megha Sharma",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2103.137292000156,
+      "p": 434,
+      "c": 61
+    }
+  },
+  {
+    "text": "[22/05/26, 9:52 PM] Nikhil Bose: kal lunch me two dal chawal bhej dena no onion",
+    "gold": {
+      "action": "order",
+      "customer": "Nikhil Bose",
+      "date": "2026-05-23",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "no_onion"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Nikhil Bose",
+        "date": "2026-05-23",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 2
+          }
+        ],
+        "prefs": [
+          "no_onion"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2128.0270420002125,
+      "p": 437,
+      "c": 110
+    }
+  },
+  {
+    "text": "[23/07/26, 7:39 PM] Megha Sharma: kal se 9 din ke liye band kar do, bahar ja rahe",
+    "gold": {
+      "action": "pause",
+      "customer": "Megha Sharma",
+      "date": "2026-07-24",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: \"pause\", customer: \"Megha Sharma\", date: null, meal: null, items: [], prefs: [], time: null, repeat: nu",
+      "ms": 2063.9808750001976,
+      "pred": null,
+      "p": 440,
+      "c": 36,
+      "raw": "{action: \"pause\", customer: \"Megha Sharma\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[21/07/26, 1:59 PM] Vikas Mehra: abhi tak nahi aaya",
+    "gold": {
+      "action": "query",
+      "customer": "Vikas Mehra",
+      "date": "2026-07-21",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: query, customer: \"Vikas Mehra\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}",
+      "ms": 2051.079999999729,
+      "pred": null,
+      "p": 431,
+      "c": 36,
+      "raw": "{action: query, customer: \"Vikas Mehra\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[25/08/26, 6:40 PM] Rahul Agarwal: kal se 4 tak mat bhejna",
+    "gold": {
+      "action": "pause",
+      "customer": "Rahul Agarwal",
+      "date": "2026-08-26",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: pause, customer: \"Rahul Agarwal\", date: null, meal: null, items: [], prefs: [], time: \"16:00\", repeat: ",
+      "ms": 2063.24450000011,
+      "pred": null,
+      "p": 432,
+      "c": 41,
+      "raw": "{action: pause, customer: \"Rahul Agarwal\", date: null, meal: null, items: [], prefs: [], time: \"16:00\", repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[10/10/26, 9:29 PM] Karan Mehra: kal se 9 din ke liye band kar do, bahar ja rahe",
+    "gold": {
+      "action": "pause",
+      "customer": "Karan Mehra",
+      "date": "2026-10-11",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: pause, customer: \"Karan Mehra\", date: null, meal: null, items: [], prefs: [\"less_spicy\"], time: null, r",
+      "ms": 2090.5124999999316,
+      "pred": null,
+      "p": 466,
+      "c": 40,
+      "raw": "{action: pause, customer: \"Karan Mehra\", date: null, meal: null, items: [], prefs: [\"less_spicy\"], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[27/05/26, 10:10 PM] Abhishek Arora: bhaiya tomorrow 1 thali dinner 8 baje 🙏",
+    "gold": {
+      "action": "order",
+      "customer": "Abhishek Arora",
+      "date": "2026-05-28",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": "20:00",
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: order, customer: \"Abhishek Arora\", date: \"2026-05-28\", meal: \"dinner\", items: [{\"dish\": \"thali\", \"qty\":",
+      "ms": 2104.4387500000994,
+      "pred": null,
+      "p": 442,
+      "c": 66,
+      "raw": "{action: order, customer: \"Abhishek Arora\", date: \"2026-05-28\", meal: \"dinner\", items: [{\"dish\": \"thali\", \"qty\": 1}], prefs: [], time: \"20:00\", repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[09/09/26, 8:00 AM] Varun Das: Please send 2 tiffin today dinner me by 8:30",
+    "gold": {
+      "action": "order",
+      "customer": "Varun Das",
+      "date": "2026-09-09",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "20:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Varun Das",
+        "date": "2026-09-09",
+        "meal": "dinner",
+        "items": [],
+        "prefs": [],
+        "time": "08:30",
+        "repeat": null
+      },
+      "ms": 2113.5555830001067,
+      "p": 457,
+      "c": 78
+    }
+  },
+  {
+    "text": "[30/08/26, 10:23 PM] Arjun Jain: start daily two thali for afternoon kal se",
+    "gold": {
+      "action": "order",
+      "customer": "Arjun Jain",
+      "date": "2026-08-31",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": "daily"
+    },
+    "out": {
+      "pred": {
+        "action": "resume",
+        "customer": "Arjun Jain",
+        "date": "2026-08-31",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": "daily"
+      },
+      "ms": 2073.894666999877,
+      "p": 433,
+      "c": 101
+    }
+  },
+  {
+    "text": "[16/08/26, 8:43 PM] Megha Verma: pausing from tomorrow till 22/8",
+    "gold": {
+      "action": "pause",
+      "customer": "Megha Verma",
+      "date": "2026-08-17",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "pause",
+        "customer": "Megha Verma",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2070.7215830002497,
+      "p": 434,
+      "c": 62
+    }
+  },
+  {
+    "text": "[29/07/26, 9:19 PM] Meera Mishra: ek chole kl dopahar 2:30 baje",
+    "gold": {
+      "action": "order",
+      "customer": "Meera Mishra",
+      "date": "2026-07-30",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": "14:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Meera Mishra",
+        "date": "2026-07-29",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": "14:30",
+        "repeat": null
+      },
+      "ms": 2135.6936249999308,
+      "p": 438,
+      "c": 106
+    }
+  },
+  {
+    "text": "[26/08/26, 8:55 PM] Arjun Gupta: where is my tiffin",
+    "gold": {
+      "action": "query",
+      "customer": "Arjun Gupta",
+      "date": "2026-08-26",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: query, customer: \"Arjun Gupta\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}",
+      "ms": 1760.5228749998787,
+      "pred": null,
+      "p": 428,
+      "c": 35,
+      "raw": "{action: query, customer: \"Arjun Gupta\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[19/08/26, 10:09 AM] Rahul Agarwal: two dabba today raat ko 8 bje",
+    "gold": {
+      "action": "order",
+      "customer": "Rahul Agarwal",
+      "date": "2026-08-19",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "20:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Rahul Agarwal",
+        "date": "2026-08-19",
+        "meal": "dinner",
+        "items": [],
+        "prefs": [],
+        "time": "20:00",
+        "repeat": null
+      },
+      "ms": 1736.7582920001041,
+      "p": 435,
+      "c": 79
+    }
+  },
+  {
+    "text": "[04/10/26, 5:41 PM] Rahul Agarwal: wapas aa gaye, kal se chalu karo",
+    "gold": {
+      "action": "resume",
+      "customer": "Rahul Agarwal",
+      "date": "2026-10-05",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: resume, customer: \"Rahul Agarwal\", date: null, meal: null, items: [], prefs: [], time: null, repeat: nu",
+      "ms": 2085.558999999648,
+      "pred": null,
+      "p": 435,
+      "c": 36,
+      "raw": "{action: resume, customer: \"Rahul Agarwal\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  },
+  {
+    "text": "[14/09/26, 10:54 AM] Meera Iyer: today raat ko 2 dabba bhej dena (less spicy)",
+    "gold": {
+      "action": "order",
+      "customer": "Meera Iyer",
+      "date": "2026-09-14",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Meera Iyer",
+        "date": "2026-09-14",
+        "meal": "dinner",
+        "items": [],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2097.157000000152,
+      "p": 442,
+      "c": 84
+    }
+  },
+  {
+    "text": "[12/05/26, 1:45 PM] Nidhi Mishra: kitna hua is mahine ka?",
+    "gold": {
+      "action": "query",
+      "customer": "Nidhi Mishra",
+      "date": null,
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{action: query, customer: \"Nidhi Mishra\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null",
+      "ms": 2084.992874999898,
+      "pred": null,
+      "p": 434,
+      "c": 37,
+      "raw": "{action: query, customer: \"Nidhi Mishra\", date: null, meal: null, items: [], prefs: [], time: null, repeat: null}<|im_end|>"
+    }
+  }
+]

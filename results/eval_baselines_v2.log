@@ -1,0 +1,60 @@
+  prompt = self.renderer.build_generation_prompt(messages[:2])
+
+=== base on 200 messages
+{
+ "valid": 0.715,
+ "action": 0.565,
+ "customer": 0.715,
+ "date": 0.565,
+ "meal": 0.685,
+ "items": 0.53,
+ "prefs": 0.67,
+ "time": 0.66,
+ "repeat": 0.71,
+ "all": 0.3,
+ "p50_ms": 2104.4014169999627,
+ "p95_ms": 2703.421917000014,
+ "usd_per_1k": 0.52228845,
+ "n": 200,
+ "hinted_items_acc": 0.5142857142857142
+}
+
+=== big on 200 messages
+{
+ "valid": 0.985,
+ "action": 0.955,
+ "customer": 0.985,
+ "date": 0.5,
+ "meal": 0.88,
+ "items": 0.865,
+ "prefs": 0.965,
+ "time": 0.955,
+ "repeat": 0.985,
+ "all": 0.385,
+ "p50_ms": 2759.773416499911,
+ "p95_ms": 3462.779208000029,
+ "usd_per_1k": 0.5546268,
+ "n": 200,
+ "hinted_items_acc": 0.6857142857142857
+}
+# Dabba parser eval: 200 held-out WhatsApp messages
+
+| System | valid | action | customer | date | meal | items | prefs | time | repeat | all | p50 ms | $/1k msgs |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Qwen3.5-4B zero-shot | 72% | 56% | 72% | 56% | 68% | 53% | 67% | 66% | 71% | 30% | 2104 | $0.522 |
+| gpt-oss-120b zero-shot | 98% | 96% | 98% | 50% | 88% | 86% | 96% | 96% | 98% | 38% | 2760 | $0.555 |
+
+## Items accuracy on messages that needed a kitchen-memory hint (bare 'dabba' from a non-veg-thali regular)
+- Qwen3.5-4B zero-shot: 51%
+- gpt-oss-120b zero-shot: 69%
+
+## All-fields accuracy by intent
+| intent | base | big |
+|---|---|---|
+| cancel | 33% | 67% |
+| modify | 38% | 38% |
+| order | 37% | 40% |
+| pause | 6% | 19% |
+| query | 22% | 34% |
+| resume | 0% | 33% |
+| subscribe | 0% | 50% |

@@ -1,0 +1,146 @@
+[
+  {
+    "text": "[30/05/26, 9:52 PM] Karan Saini: kal ka raat ko cancel kar do",
+    "gold": {
+      "action": "cancel",
+      "customer": "Karan Saini",
+      "date": "2026-05-31",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "cancel",
+        "customer": "Karan Saini",
+        "date": "2026-06-01",
+        "meal": "dinner",
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2141.2728750001406,
+      "p": 433,
+      "c": 46
+    }
+  },
+  {
+    "text": "[26/08/26, 8:58 AM] Neha Arora: Can I get ek non veg today for dopahar?",
+    "gold": {
+      "action": "order",
+      "customer": "Neha Arora",
+      "date": "2026-08-26",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": "14:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Neha Arora",
+        "date": "2026-08-26",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2217.0951250000144,
+      "p": 436,
+      "c": 57
+    }
+  },
+  {
+    "text": "[04/08/26, 6:49 PM] Manish Jain: start weekdays ek thali for lunch me kal se, jain",
+    "gold": {
+      "action": "order",
+      "customer": "Manish Jain",
+      "date": "2026-08-05",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "jain"
+      ],
+      "time": null,
+      "repeat": "weekdays"
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Manish Jain",
+        "date": "2026-08-05",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": "weekdays"
+      },
+      "ms": 2321.202582999831,
+      "p": 436,
+      "c": 55
+    }
+  },
+  {
+    "text": "[15/09/26, 8:07 PM] Nidhi Bansal: Can I get one chole chawal tomorrow for raat ko?",
+    "gold": {
+      "action": "order",
+      "customer": "Nidhi Bansal",
+      "date": "2026-09-16",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": "20:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Nidhi Bansal",
+        "date": "2026-09-16",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2279.498375000003,
+      "p": 439,
+      "c": 57
+    }
+  }
+]

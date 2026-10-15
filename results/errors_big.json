@@ -1,0 +1,4335 @@
+[
+  {
+    "text": "[16/07/26, 6:15 PM] Megha Verma: kl do chole chawal lunch 2 pm",
+    "gold": {
+      "action": "order",
+      "customer": "Megha Verma",
+      "date": "2026-07-17",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "14:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Megha Verma",
+        "date": "2026-07-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": "14:00",
+        "repeat": null
+      },
+      "ms": 4644.586375000017,
+      "p": 475,
+      "c": 192
+    }
+  },
+  {
+    "text": "[04/06/26, 1:34 PM] Vikas Khan: tiffin kab tak aayega?",
+    "gold": {
+      "action": "query",
+      "customer": "Vikas Khan",
+      "date": "2026-06-04",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Vikas Khan",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3042.306415999974,
+      "p": 473,
+      "c": 102
+    }
+  },
+  {
+    "text": "[07/07/26, 1:38 PM] Divya Tiwari: abhi tak nahi aaya",
+    "gold": {
+      "action": "query",
+      "customer": "Divya Tiwari",
+      "date": "2026-07-07",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Divya Tiwari",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3353.9220830002705,
+      "p": 472,
+      "c": 126
+    }
+  },
+  {
+    "text": "[08/05/26, 8:36 PM] Meera Iyer: tiffin kab tak aayega?",
+    "gold": {
+      "action": "query",
+      "customer": "Meera Iyer",
+      "date": "2026-05-08",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Meera Iyer",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3676.5209169998343,
+      "p": 474,
+      "c": 101
+    }
+  },
+  {
+    "text": "[22/06/26, 8:31 PM] Varun Mishra: tomorrow lunch me do chole rice bhej dena by 1",
+    "gold": {
+      "action": "order",
+      "customer": "Varun Mishra",
+      "date": "2026-06-23",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "13:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Varun Mishra",
+        "date": "2022-06-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": "13:00",
+        "repeat": null
+      },
+      "ms": 4061.8065839998962,
+      "p": 479,
+      "c": 186
+    }
+  },
+  {
+    "text": "[24/07/26, 7:31 AM] Amit Bose: bhaiya aaj two veg thali night 🙏, kam teekha",
+    "gold": {
+      "action": "order",
+      "customer": "Amit Bose",
+      "date": "2026-07-24",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Amit Bose",
+        "date": "2024-07-26",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 2
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2411.0579999996844,
+      "p": 480,
+      "c": 193
+    }
+  },
+  {
+    "text": "[19/05/26, 9:16 AM] Bhavna Bose: today dopahar ko: 2 chole 12:00 pm",
+    "gold": {
+      "action": "order",
+      "customer": "Bhavna Bose",
+      "date": "2026-05-19",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "12:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Bhavna Bose",
+        "date": "2026-05-26",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": "12:00",
+        "repeat": null
+      },
+      "ms": 2488.95500000026,
+      "p": 478,
+      "c": 188
+    }
+  },
+  {
+    "text": "[21/09/26, 7:12 AM] Tanvi Agarwal: bhaiya today ek non veg raat 🙏. kam mirch please",
+    "gold": {
+      "action": "order",
+      "customer": "Tanvi Agarwal",
+      "date": "2026-09-21",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Tanvi Agarwal",
+        "date": "2021-09-26",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2797.7405000001454,
+      "p": 481,
+      "c": 199
+    }
+  },
+  {
+    "text": "[16/07/26, 10:15 PM] Tarun Agarwal: kal se phir se start kar do",
+    "gold": {
+      "action": "resume",
+      "customer": "Tarun Agarwal",
+      "date": "2026-07-17",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "resume",
+        "customer": "Tarun Agarwal",
+        "date": "2026-07-27",
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2184.81170799987,
+      "p": 473,
+      "c": 181
+    }
+  },
+  {
+    "text": "[24/07/26, 9:50 AM] Bhavna Bose: ek tiffin for lunch me today",
+    "gold": {
+      "action": "order",
+      "customer": "Bhavna Bose",
+      "date": "2026-07-24",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Bhavna Bose",
+        "date": "2024-07-26",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2777.473999999984,
+      "p": 490,
+      "c": 195
+    }
+  },
+  {
+    "text": "[24/09/26, 10:22 PM] Tanvi Malhotra: kl lunch ke liye ek tiffin",
+    "gold": {
+      "action": "order",
+      "customer": "Tanvi Malhotra",
+      "date": "2026-09-25",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{dish:\"veg_thali\", qty:1}]. prefs [].\\n\\nReturn JSON.<|end|><|start|>assistant<|channel|>final<|message|>{\\n  \"a",
+      "ms": 2998.518417000014,
+      "pred": null,
+      "p": 499,
+      "c": 252,
+      "raw": "<|channel|>analysis<|message|>We need parse: timestamp 24/09/26 => year? assume 2024? Actually date format YY/MM/DD? Probably 24 = 2024, month 09, day 26. So date 2024-09-26. Message: \"kl lunch ke liye ek tiffin\". \"kl\" means tomorrow relative to timestamp. So tomorrow is 2024-09-27. Meal lunch. Item"
+    }
+  },
+  {
+    "text": "[22/08/26, 9:43 PM] Megha Verma: resume from tomorrow please",
+    "gold": {
+      "action": "resume",
+      "customer": "Megha Verma",
+      "date": "2026-08-23",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "resume",
+        "customer": "Megha Verma",
+        "date": "2022-08-27",
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2179.3333750001693,
+      "p": 488,
+      "c": 138
+    }
+  },
+  {
+    "text": "[02/08/26, 10:19 PM] Varun Das: Can I get do dal rice tomorrow for dinner?",
+    "gold": {
+      "action": "order",
+      "customer": "Varun Das",
+      "date": "2026-08-03",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Varun Das",
+        "date": "2026-08-03",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2220.007500000065,
+      "p": 474,
+      "c": 182
+    }
+  },
+  {
+    "text": "[22/05/26, 10:36 AM] Neha Reddy: aj 2 rajma chawal lunch me 1 bje",
+    "gold": {
+      "action": "order",
+      "customer": "Neha Reddy",
+      "date": "2026-05-22",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "rajma_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "13:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Neha Reddy",
+        "date": "2022-05-26",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "rajma_chawal",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": "13:00",
+        "repeat": null
+      },
+      "ms": 2374.8259169997255,
+      "p": 478,
+      "c": 229
+    }
+  },
+  {
+    "text": "[27/09/26, 7:25 PM] Rahul Agarwal: kal 2 tiffin raat ko 8:30 baje",
+    "gold": {
+      "action": "order",
+      "customer": "Rahul Agarwal",
+      "date": "2026-09-28",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "20:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Rahul Agarwal",
+        "date": "2026-09-28",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 2
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": "20:30",
+        "repeat": null
+      },
+      "ms": 2590.815707999809,
+      "p": 501,
+      "c": 240
+    }
+  },
+  {
+    "text": "[16/07/26, 9:51 PM] Vikas Khan: kl dinner me 1 rajma bhej dena",
+    "gold": {
+      "action": "order",
+      "customer": "Vikas Khan",
+      "date": "2026-07-17",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "rajma_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Vikas Khan",
+        "date": "2026-07-27",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "rajma_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2354.8352500001783,
+      "p": 475,
+      "c": 200
+    }
+  },
+  {
+    "text": "[26/08/26, 8:58 AM] Neha Arora: Can I get ek non veg today for dopahar?",
+    "gold": {
+      "action": "order",
+      "customer": "Neha Arora",
+      "date": "2026-08-26",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": "14:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Neha Arora",
+        "date": "2026-08-26",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2145.7685420000416,
+      "p": 476,
+      "c": 171
+    }
+  },
+  {
+    "text": "[13/08/26, 8:21 PM] Megha Sharma: bhaiya tomorrow 1 dabba dinner me 8 pm 🙏. no onion garlic please",
+    "gold": {
+      "action": "order",
+      "customer": "Megha Sharma",
+      "date": "2026-08-14",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "jain"
+      ],
+      "time": "20:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Megha Sharma",
+        "date": "2026-08-27",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "no_onion",
+          "jain"
+        ],
+        "time": "20:00",
+        "repeat": null
+      },
+      "ms": 2951.6441249998024,
+      "p": 505,
+      "c": 284
+    }
+  },
+  {
+    "text": "[13/07/26, 8:44 AM] Varun Das: Please send two dal rice today raat",
+    "gold": {
+      "action": "order",
+      "customer": "Varun Das",
+      "date": "2026-07-13",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Varun Das",
+        "date": "2026-07-26",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2159.039208000195,
+      "p": 472,
+      "c": 178
+    }
+  },
+  {
+    "text": "[30/06/26, 9:54 PM] Pooja Nair: kal se 4 tak mat bhejna",
+    "gold": {
+      "action": "pause",
+      "customer": "Pooja Nair",
+      "date": "2026-07-01",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "pause",
+        "customer": "Pooja Nair",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": "16:00",
+        "repeat": null
+      },
+      "ms": 2575.4001669997706,
+      "p": 474,
+      "c": 255
+    }
+  },
+  {
+    "text": "[24/06/26, 10:17 AM] Meera Iyer: aaj dinner 2 chicken thali bhej dena , kam teekha",
+    "gold": {
+      "action": "order",
+      "customer": "Meera Iyer",
+      "date": "2026-06-24",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Meera Iyer",
+        "date": "2024-06-26",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 2
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2184.290791999956,
+      "p": 482,
+      "c": 163
+    }
+  },
+  {
+    "text": "[23/09/26, 9:32 PM] Rahul Malhotra: 2 veg thali kal dinner",
+    "gold": {
+      "action": "order",
+      "customer": "Rahul Malhotra",
+      "date": "2026-09-24",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Rahul Malhotra",
+        "date": "2023-09-27",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2177.570542000012,
+      "p": 490,
+      "c": 191
+    }
+  },
+  {
+    "text": "[05/05/26, 1:40 PM] Priya Agarwal: tiffin kab tak aayega?",
+    "gold": {
+      "action": "query",
+      "customer": "Priya Agarwal",
+      "date": "2026-05-05",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Priya Agarwal",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2217.3724160002166,
+      "p": 474,
+      "c": 104
+    }
+  },
+  {
+    "text": "[09/08/26, 9:08 PM] Megha Verma: bhaiya kl do chole dinner me 🙏",
+    "gold": {
+      "action": "order",
+      "customer": "Megha Verma",
+      "date": "2026-08-10",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Megha Verma",
+        "date": "2026-08-27",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2214.491333999831,
+      "p": 476,
+      "c": 186
+    }
+  },
+  {
+    "text": "[20/09/26, 8:52 PM] Tanvi Malhotra: aaj ka dabba aaya nahi?",
+    "gold": {
+      "action": "query",
+      "customer": "Tanvi Malhotra",
+      "date": "2026-09-20",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Tanvi Malhotra",
+        "date": "2026-09-26",
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2242.416250000133,
+      "p": 475,
+      "c": 190
+    }
+  },
+  {
+    "text": "[03/08/26, 6:51 PM] Amit Kumar: kal se 8 tak mat bhejna",
+    "gold": {
+      "action": "pause",
+      "customer": "Amit Kumar",
+      "date": "2026-08-04",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "pause",
+        "customer": "Amit Kumar",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2846.3364580002235,
+      "p": 471,
+      "c": 171
+    }
+  },
+  {
+    "text": "[20/06/26, 8:46 PM] Kunal Agarwal: where is my tiffin",
+    "gold": {
+      "action": "query",
+      "customer": "Kunal Agarwal",
+      "date": "2026-06-20",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Kunal Agarwal",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2202.0592079998096,
+      "p": 471,
+      "c": 101
+    }
+  },
+  {
+    "text": "[05/06/26, 1:56 PM] Abhishek Mehra: tiffin kab tak aayega?",
+    "gold": {
+      "action": "query",
+      "customer": "Abhishek Mehra",
+      "date": "2026-06-05",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Abhishek Mehra",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2224.222458999975,
+      "p": 475,
+      "c": 107
+    }
+  },
+  {
+    "text": "[08/07/26, 10:18 AM] Megha Verma: aaj raat ko two chole chawal bhej dena",
+    "gold": {
+      "action": "order",
+      "customer": "Megha Verma",
+      "date": "2026-07-08",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Megha Verma",
+        "date": "2026-07-08",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2220.6725410001127,
+      "p": 479,
+      "c": 165
+    }
+  },
+  {
+    "text": "[20/08/26, 5:36 PM] Neha Sethi: pausing from tomorrow till 29/8",
+    "gold": {
+      "action": "pause",
+      "customer": "Neha Sethi",
+      "date": "2026-08-21",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "pause",
+        "customer": "Neha Sethi",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2605.069749999984,
+      "p": 474,
+      "c": 153
+    }
+  },
+  {
+    "text": "[08/05/26, 9:25 AM] Abhishek Mehra: bhaiya today do thali lunch me 1 bje 🙏",
+    "gold": {
+      "action": "order",
+      "customer": "Abhishek Mehra",
+      "date": "2026-05-08",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "13:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Abhishek Mehra",
+        "date": "2026-05-08",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": "13:00",
+        "repeat": null
+      },
+      "ms": 2591.8103340000016,
+      "p": 500,
+      "c": 212
+    }
+  },
+  {
+    "text": "[10/06/26, 9:06 AM] Siddharth Arora: today three thali dinner",
+    "gold": {
+      "action": "order",
+      "customer": "Siddharth Arora",
+      "date": "2026-06-10",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 3
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Siddharth Arora",
+        "date": "2026-06-26",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 3
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2328.771707999749,
+      "p": 471,
+      "c": 173
+    }
+  },
+  {
+    "text": "[24/06/26, 9:03 PM] Siddharth Sharma: change tomorrow lunch to one veg thali",
+    "gold": {
+      "action": "modify",
+      "customer": "Siddharth Sharma",
+      "date": "2026-06-25",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Siddharth Sharma",
+        "date": "2024-06-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2479.482208999798,
+      "p": 473,
+      "c": 191
+    }
+  },
+  {
+    "text": "[02/05/26, 8:55 PM] Megha Verma: aaj ka dabba aaya nahi?",
+    "gold": {
+      "action": "query",
+      "customer": "Megha Verma",
+      "date": "2026-05-02",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Megha Verma",
+        "date": "2026-05-02",
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2512.075915999958,
+      "p": 474,
+      "c": 198
+    }
+  },
+  {
+    "text": "[04/09/26, 10:58 AM] Tanvi Bansal: aj afternoon two chole bhej dena 2 pm pyaaz nahi",
+    "gold": {
+      "action": "order",
+      "customer": "Tanvi Bansal",
+      "date": "2026-09-04",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "no_onion"
+      ],
+      "time": "14:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Tanvi Bansal",
+        "date": "2026-09-04",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "no_onion"
+        ],
+        "time": "14:00",
+        "repeat": null
+      },
+      "ms": 2505.5709590001243,
+      "p": 482,
+      "c": 212
+    }
+  },
+  {
+    "text": "[16/09/26, 9:29 PM] Neha Arora: tomorrow dopahar: 1 non veg",
+    "gold": {
+      "action": "order",
+      "customer": "Neha Arora",
+      "date": "2026-09-17",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Neha Arora",
+        "date": "2026-09-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2146.3199580002765,
+      "p": 473,
+      "c": 192
+    }
+  },
+  {
+    "text": "[21/06/26, 9:09 AM] Aakash Iyer: today raat ko mat bhejna",
+    "gold": {
+      "action": "cancel",
+      "customer": "Aakash Iyer",
+      "date": "2026-06-21",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "cancel",
+        "customer": "Aakash Iyer",
+        "date": "2021-06-26",
+        "meal": "dinner",
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2140.5946670001867,
+      "p": 472,
+      "c": 154
+    }
+  },
+  {
+    "text": "[21/09/26, 6:01 PM] Harsh Mishra: bhaiya tomorrow ek dabba dopahar 🙏",
+    "gold": {
+      "action": "order",
+      "customer": "Harsh Mishra",
+      "date": "2026-09-22",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Harsh Mishra",
+        "date": "2021-09-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3148.854708000272,
+      "p": 476,
+      "c": 173
+    }
+  },
+  {
+    "text": "[17/09/26, 10:32 AM] Meera Chauhan: aaj ek dabba bhej dena afternoon",
+    "gold": {
+      "action": "order",
+      "customer": "Meera Chauhan",
+      "date": "2026-09-17",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Meera Chauhan",
+        "date": "2026-09-26",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3149.8378750002303,
+      "p": 475,
+      "c": 181
+    }
+  },
+  {
+    "text": "[28/09/26, 1:36 PM] Bhavna Tiwari: aaj ka dabba aaya nahi?",
+    "gold": {
+      "action": "query",
+      "customer": "Bhavna Tiwari",
+      "date": "2026-09-28",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Bhavna Tiwari",
+        "date": "2026-09-28",
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3149.159624999811,
+      "p": 475,
+      "c": 203
+    }
+  },
+  {
+    "text": "[15/07/26, 8:35 PM] Tarun Singh: bhaiya tomorrow two thali dinner me 🙏 less spicy and 1 extra roti pack",
+    "gold": {
+      "action": "order",
+      "customer": "Tarun Singh",
+      "date": "2026-07-16",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        },
+        {
+          "dish": "roti_pack",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Tarun Singh",
+        "date": "2025-07-27",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 2
+          },
+          {
+            "dish": "roti_pack",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "less_spicy",
+          "extra_roti"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3130.7684170001266,
+      "p": 484,
+      "c": 230
+    }
+  },
+  {
+    "text": "[14/09/26, 7:40 PM] Mohit Bansal: bhaiya kal ek dabba dopahar 🙏",
+    "gold": {
+      "action": "order",
+      "customer": "Mohit Bansal",
+      "date": "2026-09-15",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Mohit Bansal",
+        "date": "2024-09-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3355.206624999937,
+      "p": 477,
+      "c": 189
+    }
+  },
+  {
+    "text": "[11/06/26, 10:48 AM] Tanvi Malhotra: one dal aaj dopahar ko 12 baje tak mild",
+    "gold": {
+      "action": "order",
+      "customer": "Tanvi Malhotra",
+      "date": "2026-06-11",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": "12:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Tanvi Malhotra",
+        "date": "2026-06-11",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": "12:00",
+        "repeat": null
+      },
+      "ms": 2488.787874999616,
+      "p": 479,
+      "c": 218
+    }
+  },
+  {
+    "text": "[25/09/26, 9:41 PM] Harsh Mishra: tomorrow ka afternoon two rajma kar do",
+    "gold": {
+      "action": "modify",
+      "customer": "Harsh Mishra",
+      "date": "2026-09-26",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "rajma_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Harsh Mishra",
+        "date": "2026-09-26",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "rajma_chawal",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2756.873083999835,
+      "p": 473,
+      "c": 229
+    }
+  },
+  {
+    "text": "[30/06/26, 1:45 PM] Shreya Bose: where is my tiffin",
+    "gold": {
+      "action": "query",
+      "customer": "Shreya Bose",
+      "date": "2026-06-30",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Shreya Bose",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2761.23275000009,
+      "p": 471,
+      "c": 101
+    }
+  },
+  {
+    "text": "[20/08/26, 8:23 PM] Payal Jain: pausing from tomorrow till 24/8",
+    "gold": {
+      "action": "pause",
+      "customer": "Payal Jain",
+      "date": "2026-08-21",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "pause",
+        "customer": "Payal Jain",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2758.2286659999227,
+      "p": 473,
+      "c": 194
+    }
+  },
+  {
+    "text": "[16/08/26, 10:40 AM] Megha Verma: bhaiya today 2 chole chawal raat 🙏",
+    "gold": {
+      "action": "order",
+      "customer": "Megha Verma",
+      "date": "2026-08-16",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Megha Verma",
+        "date": "2026-08-26",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2762.360209000235,
+      "p": 479,
+      "c": 171
+    }
+  },
+  {
+    "text": "[19/07/26, 9:28 PM] Mohit Bansal: resume from tomorrow please",
+    "gold": {
+      "action": "resume",
+      "customer": "Mohit Bansal",
+      "date": "2026-07-20",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "resume",
+        "customer": "Mohit Bansal",
+        "date": "2026-07-27",
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2765.6400420000864,
+      "p": 470,
+      "c": 134
+    }
+  },
+  {
+    "text": "[15/09/26, 8:07 PM] Nidhi Bansal: Can I get one chole chawal tomorrow for raat ko?",
+    "gold": {
+      "action": "order",
+      "customer": "Nidhi Bansal",
+      "date": "2026-09-16",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": "20:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Nidhi Bansal",
+        "date": "2025-09-27",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2763.4878329999992,
+      "p": 480,
+      "c": 205
+    }
+  },
+  {
+    "text": "[14/07/26, 10:34 PM] Meera Iyer: bhaiya kal do non veg raat ko 8:30 pm 🙏 (kam mirch)",
+    "gold": {
+      "action": "order",
+      "customer": "Meera Iyer",
+      "date": "2026-07-15",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": "20:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Meera Iyer",
+        "date": "2024-07-27",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": "20:30",
+        "repeat": null
+      },
+      "ms": 2779.417333999845,
+      "p": 487,
+      "c": 203
+    }
+  },
+  {
+    "text": "[15/06/26, 8:07 PM] Aakash Iyer: tomorrow ka raat ko do chicken thali kar do by 8:30",
+    "gold": {
+      "action": "modify",
+      "customer": "Aakash Iyer",
+      "date": "2026-06-16",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "20:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Aakash Iyer",
+        "date": "2025-06-27",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": "20:30",
+        "repeat": null
+      },
+      "ms": 2766.0838340002556,
+      "p": 481,
+      "c": 199
+    }
+  },
+  {
+    "text": "[18/08/26, 7:14 AM] Ritu Sharma: do thali aaj dopahar ko by 1:30",
+    "gold": {
+      "action": "order",
+      "customer": "Ritu Sharma",
+      "date": "2026-08-18",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "13:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Ritu Sharma",
+        "date": "2026-08-26",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": "13:30",
+        "repeat": null
+      },
+      "ms": 2785.830625000017,
+      "p": 494,
+      "c": 167
+    }
+  },
+  {
+    "text": "[17/08/26, 9:03 PM] Rahul Agarwal: kl dinner ek thali bhej dena",
+    "gold": {
+      "action": "order",
+      "customer": "Rahul Agarwal",
+      "date": "2026-08-18",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Rahul Agarwal",
+        "date": "2026-08-27",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2774.9137920000067,
+      "p": 473,
+      "c": 184
+    }
+  },
+  {
+    "text": "[11/05/26, 8:42 AM] Tanvi Mehra: aj teen dabba bhej dena lunch me",
+    "gold": {
+      "action": "order",
+      "customer": "Tanvi Mehra",
+      "date": "2026-05-11",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 3
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Tanvi Mehra",
+        "date": "2026-05-11",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3387.8297910000583,
+      "p": 493,
+      "c": 170
+    }
+  },
+  {
+    "text": "[29/08/26, 10:07 AM] Amit Bose: today do thali raat",
+    "gold": {
+      "action": "order",
+      "customer": "Amit Bose",
+      "date": "2026-08-29",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Amit Bose",
+        "date": "2026-08-29",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2183.9868340002795,
+      "p": 469,
+      "c": 175
+    }
+  },
+  {
+    "text": "[14/07/26, 8:38 PM] Mohit Bansal: two dabba kal dopahar ko",
+    "gold": {
+      "action": "order",
+      "customer": "Mohit Bansal",
+      "date": "2026-07-15",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Mohit Bansal",
+        "date": "2024-07-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2171.7982919999486,
+      "p": 473,
+      "c": 164
+    }
+  },
+  {
+    "text": "[17/06/26, 8:36 PM] Bhavna Tiwari: tomorrow dopahar: teen dabba",
+    "gold": {
+      "action": "order",
+      "customer": "Bhavna Tiwari",
+      "date": "2026-06-18",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 3
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Bhavna Tiwari",
+        "date": "2026-06-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 3
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3433.94195799965,
+      "p": 473,
+      "c": 187
+    }
+  },
+  {
+    "text": "[28/05/26, 8:03 PM] Varun Mishra: start Monday to Friday 2 dabba for dopahar ko kal se, no onion",
+    "gold": {
+      "action": "order",
+      "customer": "Varun Mishra",
+      "date": "2026-05-29",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "no_onion"
+      ],
+      "time": null,
+      "repeat": "weekdays"
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Varun Mishra",
+        "date": "2026-05-29",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 2
+          }
+        ],
+        "prefs": [
+          "no_onion"
+        ],
+        "time": null,
+        "repeat": "weekdays"
+      },
+      "ms": 3071.817208000084,
+      "p": 506,
+      "c": 273
+    }
+  },
+  {
+    "text": "[19/06/26, 9:40 PM] Meera Chauhan: kal se 22 tak mat bhejna",
+    "gold": {
+      "action": "pause",
+      "customer": "Meera Chauhan",
+      "date": "2026-06-20",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "pause",
+        "customer": "Meera Chauhan",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3071.4794159998746,
+      "p": 491,
+      "c": 187
+    }
+  },
+  {
+    "text": "[09/10/26, 1:40 PM] Aakash Kapoor: aaj ka dabba aaya nahi?",
+    "gold": {
+      "action": "query",
+      "customer": "Aakash Kapoor",
+      "date": "2026-10-09",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Aakash Kapoor",
+        "date": "2026-10-09",
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2164.750124999955,
+      "p": 473,
+      "c": 185
+    }
+  },
+  {
+    "text": "[24/06/26, 8:14 PM] Kunal Agarwal: tomorrow dinner me 1 chicken kar dena instead",
+    "gold": {
+      "action": "modify",
+      "customer": "Kunal Agarwal",
+      "date": "2026-06-25",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Kunal Agarwal",
+        "date": "2024-06-27",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2784.6389169999384,
+      "p": 475,
+      "c": 178
+    }
+  },
+  {
+    "text": "[22/06/26, 9:18 PM] Meera Chauhan: kl 1 thali bhej dena lunch me 12 baje",
+    "gold": {
+      "action": "order",
+      "customer": "Meera Chauhan",
+      "date": "2026-06-23",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": "12:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Meera Chauhan",
+        "date": "2022-06-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": "12:00",
+        "repeat": null
+      },
+      "ms": 2176.138124999852,
+      "p": 480,
+      "c": 195
+    }
+  },
+  {
+    "text": "[06/09/26, 7:48 PM] Tanvi Malhotra: bhaiya kl ek dabba raat 🙏 (less spicy)",
+    "gold": {
+      "action": "order",
+      "customer": "Tanvi Malhotra",
+      "date": "2026-09-07",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Tanvi Malhotra",
+        "date": "2026-09-07",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2147.3130419999507,
+      "p": 505,
+      "c": 216
+    }
+  },
+  {
+    "text": "[21/06/26, 5:15 PM] Jyoti Sharma: Mon se Fri ek thali dinner me from tomorrow",
+    "gold": {
+      "action": "order",
+      "customer": "Jyoti Sharma",
+      "date": "2026-06-22",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": "weekdays"
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Jyoti Sharma",
+        "date": "2021-06-27",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": "weekdays"
+      },
+      "ms": 2779.680124999686,
+      "p": 491,
+      "c": 225
+    }
+  },
+  {
+    "text": "[21/07/26, 8:26 PM] Anjali Nair: tomorrow dinner me 1 dabba bhej dena by 9, extra spicy",
+    "gold": {
+      "action": "order",
+      "customer": "Anjali Nair",
+      "date": "2026-07-22",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "paneer_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "extra_spicy"
+      ],
+      "time": "21:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Anjali Nair",
+        "date": "2021-07-27",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "paneer_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "extra_spicy"
+        ],
+        "time": "09:00",
+        "repeat": null
+      },
+      "ms": 2777.082749999863,
+      "p": 506,
+      "c": 214
+    }
+  },
+  {
+    "text": "[02/06/26, 7:14 PM] Nidhi Bansal: ek chole chawal for dinner me tomorrow 9 baje tak",
+    "gold": {
+      "action": "order",
+      "customer": "Nidhi Bansal",
+      "date": "2026-06-03",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": "21:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Nidhi Bansal",
+        "date": "2026-06-03",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": "09:00",
+        "repeat": null
+      },
+      "ms": 2166.069082999911,
+      "p": 480,
+      "c": 235
+    }
+  },
+  {
+    "text": "[22/08/26, 9:14 PM] Priya Agarwal: kl dopahar cancel",
+    "gold": {
+      "action": "cancel",
+      "customer": "Priya Agarwal",
+      "date": "2026-08-23",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "cancel",
+        "customer": "Priya Agarwal",
+        "date": "2022-08-27",
+        "meal": "lunch",
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2132.887458999903,
+      "p": 469,
+      "c": 136
+    }
+  },
+  {
+    "text": "[22/07/26, 9:44 AM] Swati Reddy: today 1 dal chawal lunch me 2:30 baje",
+    "gold": {
+      "action": "order",
+      "customer": "Swati Reddy",
+      "date": "2026-07-22",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": "14:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Swati Reddy",
+        "date": "2022-07-26",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": "14:30",
+        "repeat": null
+      },
+      "ms": 2532.9145420000714,
+      "p": 479,
+      "c": 174
+    }
+  },
+  {
+    "text": "[22/05/26, 8:05 AM] Abhishek Singh: Please send ek thali today lunch me 12 baje tak (kam mirch)",
+    "gold": {
+      "action": "order",
+      "customer": "Abhishek Singh",
+      "date": "2026-05-22",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": "12:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Abhishek Singh",
+        "date": "2022-05-26",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": "12:00",
+        "repeat": null
+      },
+      "ms": 2526.330374999816,
+      "p": 483,
+      "c": 198
+    }
+  },
+  {
+    "text": "[24/07/26, 8:51 AM] Vikas Khan: bhaiya today one tiffin lunch 🙏",
+    "gold": {
+      "action": "order",
+      "customer": "Vikas Khan",
+      "date": "2026-07-24",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "rajma_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Vikas Khan",
+        "date": "2024-07-26",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2516.616458000044,
+      "p": 493,
+      "c": 211
+    }
+  },
+  {
+    "text": "[20/07/26, 9:01 AM] Anjali Sethi: aaj one tiffin lunch 12 baje tak kam teekha",
+    "gold": {
+      "action": "order",
+      "customer": "Anjali Sethi",
+      "date": "2026-07-20",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": "12:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Anjali Sethi",
+        "date": "2026-07-26",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": "12:00",
+        "repeat": null
+      },
+      "ms": 2474.095125000076,
+      "p": 505,
+      "c": 240
+    }
+  },
+  {
+    "text": "[22/09/26, 8:15 PM] Neha Reddy: do rajma rice kl dopahar",
+    "gold": {
+      "action": "order",
+      "customer": "Neha Reddy",
+      "date": "2026-09-23",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "rajma_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Neha Reddy",
+        "date": "2022-09-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "rajma_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2475.0212079998164,
+      "p": 472,
+      "c": 188
+    }
+  },
+  {
+    "text": "[30/06/26, 6:05 PM] Tarun Agarwal: kl lunch two thali bhej dena",
+    "gold": {
+      "action": "order",
+      "customer": "Tarun Agarwal",
+      "date": "2026-07-01",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{dish:\"veg_thali\", qty:2}]. No prefs. time null. repeat null. action order. customer Tarun Agarwal. date 2026-07",
+      "ms": 2387.2625419999167,
+      "pred": null,
+      "p": 474,
+      "c": 237,
+      "raw": "<|channel|>analysis<|message|>We need parse. Timestamp 30/06/26 means year? Probably 2026-06-30. Time 6:05 PM => 18:05. Message: \"kl lunch two thali bhej dena\". \"kl\" = kal = tomorrow relative to timestamp date 2026-06-30 => 2026-07-01. Meal lunch. Two thali => quantity 2 of thali => thali maps to ve"
+    }
+  },
+  {
+    "text": "[16/08/26, 8:59 AM] Priya Agarwal: aj afternoon cancel",
+    "gold": {
+      "action": "cancel",
+      "customer": "Priya Agarwal",
+      "date": "2026-08-16",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "cancel",
+        "customer": "Priya Agarwal",
+        "date": "2026-08-26",
+        "meal": "lunch",
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 1936.1644579998938,
+      "p": 468,
+      "c": 138
+    }
+  },
+  {
+    "text": "[25/08/26, 8:07 PM] Harsh Mishra: tomorrow ka lunch me ek paneer wala kar do 2:30 baje",
+    "gold": {
+      "action": "modify",
+      "customer": "Harsh Mishra",
+      "date": "2026-08-26",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "paneer_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": "14:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Harsh Mishra",
+        "date": "2026-08-26",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "paneer_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": "14:30",
+        "repeat": null
+      },
+      "ms": 2364.6592909999526,
+      "p": 481,
+      "c": 210
+    }
+  },
+  {
+    "text": "[22/06/26, 8:52 PM] Meera Mishra: 1 chole rice tomorrow lunch",
+    "gold": {
+      "action": "order",
+      "customer": "Meera Mishra",
+      "date": "2026-06-23",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Meera Mishra",
+        "date": "2022-06-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2933.8914579998345,
+      "p": 472,
+      "c": 184
+    }
+  },
+  {
+    "text": "[05/05/26, 8:47 PM] Varun Das: tiffin kab tak aayega?",
+    "gold": {
+      "action": "query",
+      "customer": "Varun Das",
+      "date": "2026-05-05",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Varun Das",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2523.791665999852,
+      "p": 473,
+      "c": 102
+    }
+  },
+  {
+    "text": "[14/07/26, 8:30 PM] Arjun Gupta: bhaiya kl 2 dal rice dinner 🙏. pyaaz nahi, roti zyada please and 1 extra roti pack",
+    "gold": {
+      "action": "order",
+      "customer": "Arjun Gupta",
+      "date": "2026-07-15",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 2
+        },
+        {
+          "dish": "roti_pack",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "extra_roti",
+        "no_onion"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "error": "bad JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1): '{dish:\"dal_chawal\", qty:2}, {dish:\"roti_pack\", qty:1}]. Return JSON.<|end|><|start|>assistant<|channel|>final<|m",
+      "ms": 3007.5607499998114,
+      "pred": null,
+      "p": 493,
+      "c": 300,
+      "raw": "<|channel|>analysis<|message|>We need JSON. Timestamp 14/07/26 => year 2024? Actually 14 means 2024? Probably 2024. So date is 2024-07-26. Message says \"kl 2 dal rice dinner\". \"kl\" = tomorrow relative to timestamp: 2024-07-27. Meal dinner. Items: dal rice corresponds to dal_chawal. qty 2. Also \"extr"
+    }
+  },
+  {
+    "text": "[16/06/26, 10:33 PM] Megha Verma: bhaiya kl 2 chole chawal night 🙏",
+    "gold": {
+      "action": "order",
+      "customer": "Megha Verma",
+      "date": "2026-06-17",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Megha Verma",
+        "date": "2026-06-27",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3000.477791999856,
+      "p": 478,
+      "c": 179
+    }
+  },
+  {
+    "text": "[11/10/26, 10:50 PM] Tanvi Agarwal: bhaiya tomorrow ek chicken thali dinner 🙏 (mild)",
+    "gold": {
+      "action": "order",
+      "customer": "Tanvi Agarwal",
+      "date": "2026-10-12",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Tanvi Agarwal",
+        "date": "2026-10-27",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2614.5623750003324,
+      "p": 480,
+      "c": 177
+    }
+  },
+  {
+    "text": "[04/07/26, 9:11 PM] Siddharth Jain: kl ka dopahar two dabba kar do 1 pm",
+    "gold": {
+      "action": "modify",
+      "customer": "Siddharth Jain",
+      "date": "2026-07-05",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "13:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Siddharth Jain",
+        "date": "2026-07-05",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": "13:00",
+        "repeat": null
+      },
+      "ms": 2547.8443750002953,
+      "p": 477,
+      "c": 194
+    }
+  },
+  {
+    "text": "[28/07/26, 6:39 PM] Tarun Agarwal: kal se 31 tak mat bhejna",
+    "gold": {
+      "action": "pause",
+      "customer": "Tarun Agarwal",
+      "date": "2026-07-29",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "pause",
+        "customer": "Tarun Agarwal",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3162.071666999964,
+      "p": 473,
+      "c": 232
+    }
+  },
+  {
+    "text": "[19/07/26, 10:21 PM] Anjali Sharma: 7 din tiffin nahi chahiye, out of station",
+    "gold": {
+      "action": "pause",
+      "customer": "Anjali Sharma",
+      "date": "2026-07-20",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "pause",
+        "customer": "Anjali Sharma",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2794.2198340001596,
+      "p": 478,
+      "c": 144
+    }
+  },
+  {
+    "text": "[20/09/26, 10:04 PM] Meera Mishra: tomorrow one chole lunch",
+    "gold": {
+      "action": "order",
+      "customer": "Meera Mishra",
+      "date": "2026-09-21",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Meera Mishra",
+        "date": "2026-09-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2782.4381670002367,
+      "p": 470,
+      "c": 161
+    }
+  },
+  {
+    "text": "[17/07/26, 6:54 PM] Isha Bansal: kl lunch ke liye do dal chawal",
+    "gold": {
+      "action": "order",
+      "customer": "Isha Bansal",
+      "date": "2026-07-18",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Isha Bansal",
+        "date": "2026-07-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2778.7120420002793,
+      "p": 475,
+      "c": 214
+    }
+  },
+  {
+    "text": "[07/07/26, 9:26 PM] Tarun Agarwal: kal se 16 tak mat bhejna",
+    "gold": {
+      "action": "pause",
+      "customer": "Tarun Agarwal",
+      "date": "2026-07-08",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "pause",
+        "customer": "Tarun Agarwal",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2768.589540999983,
+      "p": 473,
+      "c": 191
+    }
+  },
+  {
+    "text": "[16/08/26, 7:01 PM] Tanvi Malhotra: bhaiya kl one dal dopahar ko 🙏",
+    "gold": {
+      "action": "order",
+      "customer": "Tanvi Malhotra",
+      "date": "2026-08-17",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Tanvi Malhotra",
+        "date": "2026-08-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2782.198041000356,
+      "p": 477,
+      "c": 211
+    }
+  },
+  {
+    "text": "[21/05/26, 8:03 PM] Siddharth Arora: kl lunch three paneer wala bhej dena mild",
+    "gold": {
+      "action": "order",
+      "customer": "Siddharth Arora",
+      "date": "2026-05-22",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "paneer_thali",
+          "qty": 3
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Siddharth Arora",
+        "date": "2021-05-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "paneer_thali",
+            "qty": 3
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3047.919374999765,
+      "p": 477,
+      "c": 205
+    }
+  },
+  {
+    "text": "[11/06/26, 8:36 PM] Arjun Gupta: tiffin kab tak aayega?",
+    "gold": {
+      "action": "query",
+      "customer": "Arjun Gupta",
+      "date": "2026-06-11",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Arjun Gupta",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3000.5315829998835,
+      "p": 473,
+      "c": 101
+    }
+  },
+  {
+    "text": "[12/08/26, 7:42 PM] Abhishek Singh: tomorrow lunch me do chicken kar dena instead",
+    "gold": {
+      "action": "modify",
+      "customer": "Abhishek Singh",
+      "date": "2026-08-13",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Abhishek Singh",
+        "date": "2026-08-13",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2741.49158299997,
+      "p": 474,
+      "c": 213
+    }
+  },
+  {
+    "text": "[10/06/26, 1:54 PM] Nikhil Nair: where is my tiffin",
+    "gold": {
+      "action": "query",
+      "customer": "Nikhil Nair",
+      "date": "2026-06-10",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Nikhil Nair",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2741.558250000253,
+      "p": 472,
+      "c": 102
+    }
+  },
+  {
+    "text": "[19/05/26, 10:08 AM] Neha Sethi: today dinner: one dabba (jain)",
+    "gold": {
+      "action": "order",
+      "customer": "Neha Sethi",
+      "date": "2026-05-19",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [
+        "jain"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Neha Sethi",
+        "date": "2026-05-26",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "jain"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2856.640999999854,
+      "p": 475,
+      "c": 167
+    }
+  },
+  {
+    "text": "[19/07/26, 7:17 PM] Aakash Kapoor: change kal raat to two dal rice",
+    "gold": {
+      "action": "modify",
+      "customer": "Aakash Kapoor",
+      "date": "2026-07-20",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "modify",
+        "customer": "Aakash Kapoor",
+        "date": "2026-07-27",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2851.882166999985,
+      "p": 472,
+      "c": 170
+    }
+  },
+  {
+    "text": "[13/05/26, 1:40 PM] Abhishek Mehra: where is my tiffin",
+    "gold": {
+      "action": "query",
+      "customer": "Abhishek Mehra",
+      "date": "2026-05-13",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Abhishek Mehra",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2837.7019169997766,
+      "p": 472,
+      "c": 103
+    }
+  },
+  {
+    "text": "[10/05/26, 9:15 PM] Tanvi Mehra: tomorrow ka dopahar one non veg kar do",
+    "gold": {
+      "action": "modify",
+      "customer": "Tanvi Mehra",
+      "date": "2026-05-11",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Tanvi Mehra",
+        "date": "2026-05-11",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2569.560584000101,
+      "p": 474,
+      "c": 199
+    }
+  },
+  {
+    "text": "[05/07/26, 10:49 PM] Jyoti Sharma: kal se 6 din ke liye band kar do, bahar ja rahe",
+    "gold": {
+      "action": "pause",
+      "customer": "Jyoti Sharma",
+      "date": "2026-07-06",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "pause",
+        "customer": "Jyoti Sharma",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2531.8154579999828,
+      "p": 481,
+      "c": 164
+    }
+  },
+  {
+    "text": "[18/06/26, 7:46 PM] Meera Iyer: kal afternoon two chicken bhej dena 2:30 pm. kam mirch please",
+    "gold": {
+      "action": "order",
+      "customer": "Meera Iyer",
+      "date": "2026-06-19",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chicken_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": "14:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Meera Iyer",
+        "date": "2026-06-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chicken_thali",
+            "qty": 2
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": "14:30",
+        "repeat": null
+      },
+      "ms": 2541.5497919998415,
+      "p": 483,
+      "c": 236
+    }
+  },
+  {
+    "text": "[30/09/26, 1:55 PM] Meera Nair: where is my tiffin",
+    "gold": {
+      "action": "query",
+      "customer": "Meera Nair",
+      "date": "2026-09-30",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Meera Nair",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2793.986874999973,
+      "p": 471,
+      "c": 101
+    }
+  },
+  {
+    "text": "[06/09/26, 8:42 PM] Kunal Gupta: where is my tiffin",
+    "gold": {
+      "action": "query",
+      "customer": "Kunal Gupta",
+      "date": "2026-09-06",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Kunal Gupta",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2794.0449170000647,
+      "p": 496,
+      "c": 99
+    }
+  },
+  {
+    "text": "[19/06/26, 10:11 AM] Vikas Khan: aj dinner ke liye one usual 8:30 baje tak",
+    "gold": {
+      "action": "order",
+      "customer": "Vikas Khan",
+      "date": "2026-06-19",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "rajma_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": "20:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Vikas Khan",
+        "date": "2026-06-26",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "rajma_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": "20:30",
+        "repeat": null
+      },
+      "ms": 2760.0509999997485,
+      "p": 496,
+      "c": 252
+    }
+  },
+  {
+    "text": "[14/07/26, 8:41 PM] Megha Sharma: where is my tiffin",
+    "gold": {
+      "action": "query",
+      "customer": "Megha Sharma",
+      "date": "2026-07-14",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Megha Sharma",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2761.9357080002374,
+      "p": 470,
+      "c": 99
+    }
+  },
+  {
+    "text": "[20/05/26, 8:20 AM] Mohit Bansal: today one veg thali lunch me",
+    "gold": {
+      "action": "order",
+      "customer": "Mohit Bansal",
+      "date": "2026-05-20",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Mohit Bansal",
+        "date": "2020-05-26",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2755.6657499999346,
+      "p": 473,
+      "c": 172
+    }
+  },
+  {
+    "text": "[14/05/26, 7:18 PM] Bhavna Bose: Can I get do dabba tomorrow for lunch me?",
+    "gold": {
+      "action": "order",
+      "customer": "Bhavna Bose",
+      "date": "2026-05-15",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Bhavna Bose",
+        "date": "2024-05-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2730.2827499997875,
+      "p": 475,
+      "c": 187
+    }
+  },
+  {
+    "text": "[24/08/26, 8:30 PM] Bhavna Bose: tomorrow ka dopahar ko 2 chole chawal kar do",
+    "gold": {
+      "action": "modify",
+      "customer": "Bhavna Bose",
+      "date": "2026-08-25",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "chole_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Bhavna Bose",
+        "date": "2024-08-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "chole_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2772.497999999814,
+      "p": 477,
+      "c": 190
+    }
+  },
+  {
+    "text": "[29/07/26, 7:27 PM] Aakash Iyer: tomorrow dinner: do usual",
+    "gold": {
+      "action": "order",
+      "customer": "Aakash Iyer",
+      "date": "2026-07-30",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Aakash Iyer",
+        "date": "2026-07-30",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2773.8149580000027,
+      "p": 470,
+      "c": 180
+    }
+  },
+  {
+    "text": "[31/07/26, 8:43 PM] Anjali Nair: abhi tak nahi aaya",
+    "gold": {
+      "action": "query",
+      "customer": "Anjali Nair",
+      "date": "2026-07-31",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Anjali Nair",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3755.1693750001505,
+      "p": 471,
+      "c": 116
+    }
+  },
+  {
+    "text": "[17/06/26, 9:21 AM] Vikas Khan: aaj do veg thali raat",
+    "gold": {
+      "action": "order",
+      "customer": "Vikas Khan",
+      "date": "2026-06-17",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Vikas Khan",
+        "date": "2026-06-26",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2381.1517499998445,
+      "p": 472,
+      "c": 170
+    }
+  },
+  {
+    "text": "[17/05/26, 10:18 PM] Tanvi Agarwal: kal se phir se start kar do",
+    "gold": {
+      "action": "resume",
+      "customer": "Tanvi Agarwal",
+      "date": "2026-05-18",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "resume",
+        "customer": "Tanvi Agarwal",
+        "date": "2026-05-27",
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2759.4958330000736,
+      "p": 473,
+      "c": 161
+    }
+  },
+  {
+    "text": "[23/07/26, 8:25 PM] Sahil Mishra: tomorrow lunch ke liye ek dal",
+    "gold": {
+      "action": "order",
+      "customer": "Sahil Mishra",
+      "date": "2026-07-24",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 1
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Sahil Mishra",
+        "date": "2023-07-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2753.808417000073,
+      "p": 472,
+      "c": 184
+    }
+  },
+  {
+    "text": "[21/09/26, 7:46 AM] Tarun Singh: bhaiya aaj three usual raat ko 🙏",
+    "gold": {
+      "action": "order",
+      "customer": "Tarun Singh",
+      "date": "2026-09-21",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 3
+        }
+      ],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Tarun Singh",
+        "date": "2021-09-26",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 3
+          }
+        ],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3243.086707999737,
+      "p": 476,
+      "c": 211
+    }
+  },
+  {
+    "text": "[10/09/26, 9:35 AM] Anjali Sharma: do rajma rice aj dopahar (no onion, no rice), extra roti",
+    "gold": {
+      "action": "order",
+      "customer": "Anjali Sharma",
+      "date": "2026-09-10",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "rajma_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "extra_roti",
+        "no_onion",
+        "no_rice"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Anjali Sharma",
+        "date": "2026-09-10",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "rajma_chawal",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "no_onion",
+          "no_rice",
+          "extra_roti"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3245.7420830000956,
+      "p": 481,
+      "c": 235
+    }
+  },
+  {
+    "text": "[11/06/26, 10:01 PM] Megha Sharma: pausing from tomorrow till 14/6",
+    "gold": {
+      "action": "pause",
+      "customer": "Megha Sharma",
+      "date": "2026-06-12",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "pause",
+        "customer": "Megha Sharma",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3246.4189169995734,
+      "p": 473,
+      "c": 168
+    }
+  },
+  {
+    "text": "[17/07/26, 9:15 AM] Amit Bose: aaj dinner two veg thali bhej dena (kam mirch)",
+    "gold": {
+      "action": "order",
+      "customer": "Amit Bose",
+      "date": "2026-07-17",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Amit Bose",
+        "date": "2026-07-26",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 1
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3210.6287920000796,
+      "p": 479,
+      "c": 170
+    }
+  },
+  {
+    "text": "[22/05/26, 9:52 PM] Nikhil Bose: kal lunch me two dal chawal bhej dena no onion",
+    "gold": {
+      "action": "order",
+      "customer": "Nikhil Bose",
+      "date": "2026-05-23",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "no_onion"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Nikhil Bose",
+        "date": "2022-05-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 2
+          }
+        ],
+        "prefs": [
+          "no_onion"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2921.08508299998,
+      "p": 478,
+      "c": 192
+    }
+  },
+  {
+    "text": "[23/07/26, 7:39 PM] Megha Sharma: kal se 9 din ke liye band kar do, bahar ja rahe",
+    "gold": {
+      "action": "pause",
+      "customer": "Megha Sharma",
+      "date": "2026-07-24",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "pause",
+        "customer": "Megha Sharma",
+        "date": "2023-07-27",
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2836.8282500000532,
+      "p": 481,
+      "c": 152
+    }
+  },
+  {
+    "text": "[21/07/26, 1:59 PM] Vikas Mehra: abhi tak nahi aaya",
+    "gold": {
+      "action": "query",
+      "customer": "Vikas Mehra",
+      "date": "2026-07-21",
+      "meal": "lunch",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Vikas Mehra",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 2267.681833000097,
+      "p": 471,
+      "c": 120
+    }
+  },
+  {
+    "text": "[25/08/26, 6:40 PM] Rahul Agarwal: kal se 4 tak mat bhejna",
+    "gold": {
+      "action": "pause",
+      "customer": "Rahul Agarwal",
+      "date": "2026-08-26",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "pause",
+        "customer": "Rahul Agarwal",
+        "date": "2026-08-27",
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": "16:00",
+        "repeat": null
+      },
+      "ms": 3354.7147499998573,
+      "p": 472,
+      "c": 231
+    }
+  },
+  {
+    "text": "[09/09/26, 8:00 AM] Varun Das: Please send 2 tiffin today dinner me by 8:30",
+    "gold": {
+      "action": "order",
+      "customer": "Varun Das",
+      "date": "2026-09-09",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "20:30",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Varun Das",
+        "date": "2026-09-09",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": "20:30",
+        "repeat": null
+      },
+      "ms": 2992.4074170003223,
+      "p": 496,
+      "c": 180
+    }
+  },
+  {
+    "text": "[16/08/26, 8:43 PM] Megha Verma: pausing from tomorrow till 22/8",
+    "gold": {
+      "action": "pause",
+      "customer": "Megha Verma",
+      "date": "2026-08-17",
+      "meal": null,
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "pause",
+        "customer": "Megha Verma",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3853.707540999949,
+      "p": 474,
+      "c": 256
+    }
+  },
+  {
+    "text": "[26/08/26, 8:55 PM] Arjun Gupta: where is my tiffin",
+    "gold": {
+      "action": "query",
+      "customer": "Arjun Gupta",
+      "date": "2026-08-26",
+      "meal": "dinner",
+      "items": [],
+      "prefs": [],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "query",
+        "customer": "Arjun Gupta",
+        "date": null,
+        "meal": null,
+        "items": [],
+        "prefs": [],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3182.3108339999635,
+      "p": 470,
+      "c": 101
+    }
+  },
+  {
+    "text": "[19/08/26, 10:09 AM] Rahul Agarwal: two dabba today raat ko 8 bje",
+    "gold": {
+      "action": "order",
+      "customer": "Rahul Agarwal",
+      "date": "2026-08-19",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "20:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Rahul Agarwal",
+        "date": "2026-08-26",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": "20:00",
+        "repeat": null
+      },
+      "ms": 3462.779208000029,
+      "p": 475,
+      "c": 183
+    }
+  },
+  {
+    "text": "[14/09/26, 10:54 AM] Meera Iyer: today raat ko 2 dabba bhej dena (less spicy)",
+    "gold": {
+      "action": "order",
+      "customer": "Meera Iyer",
+      "date": "2026-09-14",
+      "meal": "dinner",
+      "items": [
+        {
+          "dish": "veg_thali",
+          "qty": 2
+        }
+      ],
+      "prefs": [
+        "less_spicy"
+      ],
+      "time": null,
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Meera Iyer",
+        "date": "2024-09-26",
+        "meal": "dinner",
+        "items": [
+          {
+            "dish": "veg_thali",
+            "qty": 2
+          }
+        ],
+        "prefs": [
+          "less_spicy"
+        ],
+        "time": null,
+        "repeat": null
+      },
+      "ms": 3104.844624999714,
+      "p": 481,
+      "c": 245
+    }
+  },
+  {
+    "text": "[20/07/26, 8:52 PM] Sahil Mishra: two usual tomorrow lunch me 2 baje",
+    "gold": {
+      "action": "order",
+      "customer": "Sahil Mishra",
+      "date": "2026-07-21",
+      "meal": "lunch",
+      "items": [
+        {
+          "dish": "dal_chawal",
+          "qty": 2
+        }
+      ],
+      "prefs": [],
+      "time": "14:00",
+      "repeat": null
+    },
+    "out": {
+      "pred": {
+        "action": "order",
+        "customer": "Sahil Mishra",
+        "date": "2020-07-27",
+        "meal": "lunch",
+        "items": [
+          {
+            "dish": "dal_chawal",
+            "qty": 2
+          }
+        ],
+        "prefs": [],
+        "time": "14:00",
+        "repeat": null
+      },
+      "ms": 3098.943167000016,
+      "p": 492,
+      "c": 226
+    }
+  }
+]

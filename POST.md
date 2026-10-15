@@ -58,11 +58,15 @@ sampler_path = tc.save_weights_for_sampler(name="dabba-v2").result().path
 
 **Did it beat the baseline?** Same 200 held-out messages, same system prompt, exact match on every field. Baselines are zero-shot: the untouched 4B and gpt-oss-120b.
 
-<!-- TABLE -->
+| System | valid JSON | action | date | items | prefs | time | **all fields** | p50 latency | $ / 1k msgs |
+|---|---|---|---|---|---|---|---|---|---|
+| Qwen3.5-4B zero-shot | 72% | 56% | 56% | 53% | 67% | 66% | **30%** | 2.1 s | $0.52 |
+| gpt-oss-120b zero-shot | 98% | 96% | 50% | 86% | 96% | 96% | **38%** | 2.8 s | $0.56 |
+| Qwen3.5-4B + Dabba LoRA | 100% | 100% | 100% | 100% | 100% | 99% | **98%** | 2.3 s | $0.49 |
 
-The 120B model writes valid JSON almost every time and still gets fewer than four messages in ten fully right, because it resolves "kal" against the wrong day. The fine-tuned 4B resolves dates at <!-- DATE% --> and gets <!-- ALL% --> of messages fully right.
+The 120B model writes valid JSON almost every time and still gets fewer than four messages in ten fully right, because it resolves "kal" against the wrong day. The fine-tuned 4B resolves every date in the test set and gets 98% of messages fully right. Of the four it misses, two are a template of mine whose delivery time never made it into the text (label noise, my fault), one is a dropped "jain", and one is a real slip: "kal" from the night of 30 May came out as 1 June.
 
-<!-- CHART -->
+![All-fields and items accuracy on 200 held-out messages](https://raw.githubusercontent.com/its-kumar-yash/dabba/main/results/results.png)
 
 ### 2. The memory: Backboard
 
@@ -72,7 +76,7 @@ The 120B model writes valid JSON almost every time and still gets fewer than fou
 POST /assistants/{id}/memories   {"content": "Harsh Khan: usual dish paneer_thali, prefs no_onion."}
 ```
 
-Before parsing a message, Dabba searches those memories with the message, keeps only the ones whose subject is the sender, and prepends them to the system prompt as a *Known rules from the kitchen* block. The model was trained with that block present on 19% of examples, so it obeys it. On the 36 test messages where a bare "dabba" came from a non-veg-thali regular, the zero-shot 120B picked the right dish 64% of the time; the fine-tune with the rule in context picked it 100%.
+Before parsing a message, Dabba searches those memories with the message, keeps only the ones whose subject is the sender, and prepends them to the system prompt as a *Known rules from the kitchen* block. The model was trained with that block present on 18% of examples, so it obeys it. On the 35 test messages where a bare "dabba" came from a non-veg-thali regular, the zero-shot 120B picked the right dish 69% of the time with the same rule in its prompt; the fine-tune picked it 100%.
 
 Memory writes and reads are plain API calls, no LLM in the loop, which is what you want for a fact as boring as "Harsh takes paneer".
 
@@ -103,7 +107,7 @@ One `render.yaml`, one Python web service, free tier. The parser is served from 
 
 **You can fine-tune.** No prompt teaches a frontier model that "parso" from a Tuesday night is Thursday and that a kitchen's "dabba" is whatever that customer always takes. Three epochs of LoRA on a 4B model did, for under two dollars, and the adapter is a file I own. When the kitchen adds a dish, I regenerate and retrain over lunch.
 
-**Small is the right size.** A 4B model beat a 120B model by <!-- GAP --> points on this task. A tiffin kitchen's compute budget is a phone and, at best, an old laptop. A 4B adapter fits; a 120B API bill does not.
+**Small is the right size.** A 4B model beat a 120B model by 60 points on this task. A tiffin kitchen's compute budget is a phone and, at best, an old laptop. A 4B adapter fits; a 120B API bill does not.
 
 **The group chat stays in the house.** Those messages carry names, addresses, who is travelling and when. Run on a laptop with Ollama and the local TabPFN weights, nothing leaves. A closed model is a copy of the whole neighbourhood's routine on someone else's server.
 
