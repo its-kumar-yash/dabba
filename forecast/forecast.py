@@ -146,10 +146,14 @@ def main():
     ap.add_argument("--history", default=str(ROOT / "data" / "history.csv"))
     ap.add_argument("--days", type=int, default=28)
     ap.add_argument("--mode", default=os.environ.get("TABPFN_MODE", "local"), choices=["local", "client"])
+    ap.add_argument("--reuse", action="store_true", help="rebuild the report from out/forecast_backtest.csv without calling TabPFN")
     args = ap.parse_args()
     df = load_history(Path(args.history))
     print(f"history rows {len(df)}, series {df.groupby(['dish','meal']).ngroups}, test days {args.days}, mode {args.mode}")
-    res, t_fit = backtest(df, args.days, args.mode)
+    if args.reuse and (OUT / "forecast_backtest.csv").exists():
+        res, t_fit = pd.read_csv(OUT / "forecast_backtest.csv", parse_dates=["date"]), float("nan")
+    else:
+        res, t_fit = backtest(df, args.days, args.mode)
     m = metrics(res)
     OUT.mkdir(exist_ok=True)
     res.to_csv(OUT / "forecast_backtest.csv", index=False)

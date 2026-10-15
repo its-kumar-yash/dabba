@@ -93,11 +93,22 @@ Rain is in the history and deliberately *not* a feature: nobody knows tomorrow's
 
 The model is `TabPFNRegressor` from Prior Labs, fitted on everything before the test day and asked for the 10/50/90 quantiles. I walked it forward over the last 28 days against the rules of thumb an owner actually uses, plus gradient boosting for honesty:
 
-<!-- FORECAST TABLE -->
+| Predictor (per dish, per meal) | MAE in dabbas | over-cooked / day | under-cooked / day | exactly right |
+|---|---|---|---|---|
+| Same as yesterday | 2.56 | 18.1 | 17.7 | 24% |
+| 7-day average | 2.30 | 15.7 | 16.5 | 26% |
+| Last week, same weekday | 1.79 | 12.6 | 12.5 | 32% |
+| Advance orders ÷ usual advance share (what an owner does) | 1.55 | 12.4 | 9.3 | 36% |
+| Gradient boosting on the same features | 1.07 | 7.3 | 7.7 | 39% |
+| **TabPFN** | **0.90** | **3.9** | **8.7** | **51%** |
 
-<!-- FORECAST CHART -->
+28 test days, 14 dish-meal series, 392 predictions, walk-forward with the model refitted weekly. "Over/under-cooked" are summed across all dishes for a day; "exactly right" is the share of dish-day predictions that hit the integer.
 
-The number that matters is the over- and under-cooked columns, because they are the money. <!-- FORECAST SENTENCE -->
+![Actual dabbas per day vs TabPFN median and 10–90% band over the 28 test days](https://raw.githubusercontent.com/its-kumar-yash/dabba/main/results/forecast.png)
+
+The number that matters is the over- and under-cooked columns, because they are the money. The owner's own rule mis-cooks about 22 dabbas a day across the menu; TabPFN mis-cooks about 13, and most of its misses are on the under side, which is why the app's "cook" number leans towards the top of the band when the extra is cheap. Gradient boosting on identical features gets close on MAE, but TabPFN over-cooks half as much and needed no tuning at all.
+
+One honest note on the band: it was asked for 10–90% and covered 97% of outcomes, so it is wider than it claims. For a kitchen that is the right failure mode, but it is a failure mode.
 
 ### 4. Render
 
