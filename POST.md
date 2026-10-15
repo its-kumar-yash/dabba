@@ -29,7 +29,7 @@ Who pays: the owner. One over-cooked tray of chicken is more than a month of thi
 
 <!-- TODO: GIF -->
 
-Hosted demo: **https://dabba-jgho.onrender.com** (free tier, about a minute to wake). Press *Use tonight's sample* to load twelve real-looking messages, parse them, and get the prep list.
+Hosted demo: **https://dabba-jgho.onrender.com** (free tier, about a minute to wake). Press *Use tonight's sample* to load twelve messages from the simulated kitchen's last evening, parse them (about 12 seconds for all twelve), and get the prep list (about 30 seconds, one TabPFN call per plan). Then change Harsh Khan's "1 dabba" to a paneer thali and watch the kitchen memory learn it.
 
 ## Code
 
@@ -112,7 +112,7 @@ One honest note on the band: it was asked for 10–90% and covered 97% of outcom
 
 ### 4. Render
 
-One `render.yaml`, one Python web service, free tier. The parser is served from Tinker's sampling API because 512 MB cannot hold a 4B model; TabPFN runs through Prior Labs' API for the same reason. At home the same app points at Ollama and the local TabPFN weights, with one environment variable each.
+One `render.yaml`, one Python web service, free tier. The parser is served from Tinker's sampling API because 512 MB cannot hold a 4B model; TabPFN runs through Prior Labs' API for the same reason. The same app can point at Ollama and the local TabPFN weights instead, one environment variable each; the parser backend and the local TabPFN mode are in the repo, though this week I only had time to measure the hosted path.
 
 ## Why Does Open Innovation Matter?
 
@@ -120,7 +120,7 @@ One `render.yaml`, one Python web service, free tier. The parser is served from 
 
 **Small is the right size.** A 4B model beat a 120B model by 60 points on this task. A tiffin kitchen's compute budget is a phone and, at best, an old laptop. A 4B adapter fits; a 120B API bill does not.
 
-**The group chat stays in the house.** Those messages carry names, addresses, who is travelling and when. Run on a laptop with Ollama and the local TabPFN weights, nothing leaves. A closed model is a copy of the whole neighbourhood's routine on someone else's server.
+**The group chat stays in the house.** Those messages carry names, addresses, who is travelling and when. Run on a laptop with Ollama and the local TabPFN weights, which the repo supports, and nothing leaves. A closed model is a copy of the whole neighbourhood's routine on someone else's server.
 
 **A tabular foundation model changes who gets a forecast.** Demand forecasting used to mean a data scientist and a month. TabPFN fits in one call on 2,000 rows and gives calibrated bands. The owner never sees it; the owner sees "cook 34, maybe 38".
 

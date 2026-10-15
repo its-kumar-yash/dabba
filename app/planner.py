@@ -54,8 +54,21 @@ def _features_for(day: date, meal: str, dish: str, advance: int, hist: pd.DataFr
     }
 
 
+_cache: dict = {}
+
+
 def plan(day: date, advance: dict, mode: str | None = None) -> dict:
     """advance: {(meal, dish): count}. Returns per meal/dish: advance, forecast median, lo, hi, cook."""
+    key = (day.isoformat(), tuple(sorted(advance.items())), mode)
+    if key in _cache:
+        return _cache[key]
+    out = _plan(day, advance, mode)
+    if out.get("forecast_ok"):
+        _cache[key] = out
+    return out
+
+
+def _plan(day: date, advance: dict, mode: str | None = None) -> dict:
     hist = history()
     mode = mode or os.environ.get("TABPFN_MODE", "client")
     rows, keys = [], []
@@ -77,7 +90,8 @@ def plan(day: date, advance: dict, mode: str | None = None) -> dict:
         out["forecast_ok"] = False
     for (meal, dish), r, m, l, h in zip(keys, rows, med, lo, hi):
         m, l, h = max(float(m), r["advance_orders"]), max(float(l), r["advance_orders"]), max(float(h), r["advance_orders"])
-        cook = int(np.ceil(h)) if h - m <= 3 else int(np.ceil(m + (h - m) * 0.6))  # lean towards the upper band only when it's cheap
+        # the backtest under-cooks more than it over-cooks, so lean a little above the median: 40% of the way to the top of the band
+        cook = int(np.ceil(m + (h - m) * 0.4))
         if r["advance_orders"] == 0 and m < 0.5:
             continue
         entry = {"dish": dish, "name": MENU[dish]["name"], "advance": r["advance_orders"], "forecast": round(m, 1),
